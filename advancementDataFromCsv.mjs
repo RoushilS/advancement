@@ -10,6 +10,7 @@ const API_ORIGIN = process.env.API_ORIGIN || process.env.GRAPHQL_URL || "http://
 const FRONTEND_CODE = process.env.FRONTEND_CODE || "ftc-scout-local";
 const season = Number(process.argv[2] || 2025);
 const outFile = process.argv[3] || "advancementData.csv";
+const CONCURRENCY = Number(process.env.CONCURRENCY || 5);
 
 const EVENTS_SEARCH = `
 query EventsSearch($season: Int!) {
@@ -97,44 +98,56 @@ async function main() {
     console.log(`Found ${events.length} events with matches.`);
 
     const rows = [];
-    for (const [idx, ev] of events.entries()) {
-        const data = await fetchGraphQL(EVENT_QUERY, { season, code: ev.code });
-        const event = data?.eventByCode;
-        if (!event) continue;
-        const matches = event.matches ?? [];
-        if (!matches.length) continue;
+    let processed = 0;
+    let index = 0;
 
-        const advancement = event.advancement ?? [];
-        const teamCount = advancement.length;
+    const worker = async () => {
+        while (true) {
+            const i = index++;
+            if (i >= events.length) return;
+            const ev = events[i];
+            const data = await fetchGraphQL(EVENT_QUERY, { season, code: ev.code });
+            const event = data?.eventByCode;
+            if (!event) continue;
+            const matches = event.matches ?? [];
+            if (!matches.length) continue;
 
-        const qualRanks = new Map();
-        for (const t of event.teams ?? []) {
-            const r = t.stats?.rank;
-            if (r != null) qualRanks.set(t.teamNumber, r);
+            const advancement = event.advancement ?? [];
+            const teamCount = advancement.length;
+
+            const qualRanks = new Map();
+            for (const t of event.teams ?? []) {
+                const r = t.stats?.rank;
+                if (r != null) qualRanks.set(t.teamNumber, r);
+            }
+
+            for (const a of advancement) {
+                rows.push({
+                    season,
+                    event_code: event.code,
+                    event_name: event.name,
+                    team_count: teamCount,
+                    match_count: matches.length,
+                    team_number: a.teamNumber,
+                    adv_rank: a.rank ?? "",
+                    qual_rank: qualRanks.get(a.teamNumber) ?? "",
+                    qual_points: a.qualPoints ?? "",
+                    alliance_selection_points: a.allianceSelectionPoints ?? "",
+                    award_points: a.awardPoints ?? "",
+                    playoff_points: a.playoffPoints ?? "",
+                    total_points: a.totalPoints ?? "",
+                });
+            }
+
+            processed += 1;
+            if (processed % 10 === 0) {
+                console.log(`Processed ${processed}/${events.length} events...`);
+            }
         }
+    };
 
-        for (const a of advancement) {
-            rows.push({
-                season,
-                event_code: event.code,
-                event_name: event.name,
-                team_count: teamCount,
-      match_count: matches.length,
-      team_number: a.teamNumber,
-      adv_rank: a.rank ?? "",
-      qual_rank: qualRanks.get(a.teamNumber) ?? "",
-      qual_points: a.qualPoints ?? "",
-      alliance_selection_points: a.allianceSelectionPoints ?? "",
-      award_points: a.awardPoints ?? "",
-      playoff_points: a.playoffPoints ?? "",
-      total_points: a.totalPoints ?? "",
-    });
-  }
-
-        if ((idx + 1) % 10 === 0) {
-            console.log(`Processed ${idx + 1}/${events.length} events...`);
-        }
-    }
+    const workers = Array.from({ length: Math.min(CONCURRENCY, events.length) }, () => worker());
+    await Promise.all(workers);
 
     if (!rows.length) {
         console.error("No rows collected; check API_ORIGIN/front-end code.");
