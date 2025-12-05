@@ -616,18 +616,43 @@
     controls.addEventListener('submit', (e) => {
       e.preventDefault();
       render();
+      trackEvent('apply_filters', {
+        min_teams: minInput.value,
+        max_teams: maxInput.value,
+        threshold: thresholdInput.value
+      });
     });
 
     rangeSelect.addEventListener('change', () => {
       applyRangePreset();
       render();
+      trackEvent('select_team_range', { range_value: rangeSelect.value });
     });
-    axisXSelect.addEventListener('change', render);
-    axisYSelect.addEventListener('change', render);
-    tableToggles.addEventListener('change', () => {
+    axisXSelect.addEventListener('change', () => {
+      render();
+      trackEvent('change_axis_x', { factor_id: axisXSelect.value });
+    });
+    axisYSelect.addEventListener('change', () => {
+      render();
+      trackEvent('change_axis_y', { factor_id: axisYSelect.value });
+    });
+    tableToggles.addEventListener('change', (e) => {
       selectedTables = getSelectedTableKeys();
       render();
+      if (e.target && e.target.type === 'checkbox') {
+        trackEvent('toggle_factor_table', {
+          factor_id: e.target.value,
+          visible: e.target.checked
+        });
+      }
     });
+
+    // GA Tracking Helper
+    function trackEvent(eventName, params) {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params);
+      }
+    }
 
     applyRangePreset();
 
