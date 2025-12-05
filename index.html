@@ -218,6 +218,14 @@
     .secondary-controls {
       display: contents;
     }
+
+    .low-data-cell {
+      background-image: repeating-linear-gradient(45deg,
+          transparent,
+          transparent 5px,
+          rgba(0, 0, 0, 0.08) 5px,
+          rgba(0, 0, 0, 0.08) 10px);
+    }
   </style>
 </head>
 
@@ -498,6 +506,69 @@
       selectedTables = getSelectedTableKeys();
     }
 
+    function collapseGroups(groups, factorId) {
+      // Sort by sort key
+      let sorted = [...groups].sort((a, b) => a.sort - b.sort);
+      const mergeMap = new Map(); // oldKey -> newKey
+
+      // Initialize mergeMap (identity)
+      sorted.forEach(g => mergeMap.set(g.key, g.key));
+
+      if (factorId === 'qual' && sorted.length > 0) {
+        let tailHits = 0;
+        let tailTotal = 0;
+        let splitIndex = sorted.length;
+
+        for (let i = sorted.length - 1; i >= 0; i--) {
+          const g = sorted[i];
+
+          // Constraint: Do not collapse ranks <= 12
+          if (g.sort <= 12) {
+            break;
+          }
+
+          const nextHits = tailHits + g.hits;
+          const nextTotal = tailTotal + g.total;
+          if (nextTotal === 0) continue;
+
+          if ((nextHits / nextTotal) <= 0.05) {
+            tailHits = nextHits;
+            tailTotal = nextTotal;
+            splitIndex = i;
+          } else {
+            break;
+          }
+        }
+
+        if (splitIndex < sorted.length) {
+          const kept = sorted.slice(0, splitIndex);
+          const collapsed = sorted.slice(splitIndex);
+
+          if (collapsed.length > 0) {
+            const first = collapsed[0];
+            let labelBase = first.label.replace('#', '');
+            if (labelBase.includes('-')) labelBase = labelBase.split('-')[0];
+
+            const newKey = 'collapsed';
+            const newLabel = `#${labelBase}+`;
+
+            // Update mergeMap
+            collapsed.forEach(g => mergeMap.set(g.key, newKey));
+
+            kept.push({
+              key: newKey,
+              label: newLabel,
+              sort: first.sort,
+              total: tailTotal,
+              hits: tailHits
+            });
+            sorted = kept;
+          }
+        }
+      }
+      return { groups: sorted, mergeMap };
+    }
+
     function renderFactorTables(rows, threshold) {
       const isLowData = rows.length <= 100;
       const parts = [];
@@ -519,7 +590,9 @@
         if (!isLowData) {
           sorted = sorted.filter((g) => g.total > 2);
         }
-        sorted.sort((a, b) => a.sort - b.sort);
+
+        const { groups: collapsedGroups } = collapseGroups(sorted, factor.id);
+        sorted = collapsedGroups;
 
         if (!sorted.length) {
           parts.push(`<table><caption>${factor.fullLabel || factor.label}</caption><tr><td class="missing">No data${!isLowData ? ' (n>2)' : ''}</td></tr></table>`);
@@ -532,7 +605,8 @@
         for (const g of sorted) {
           const pct = (g.hits / g.total) * 100;
           const { bg, fg } = colorForPct(pct);
-          rowsHtml.push(`<tr><th>${g.label}</th><td style="background:${bg};color:${fg};">${pct.toFixed(1)}%</td><td>${g.total}</td></tr>`);
+          const cls = g.total <= 3 ? 'low-data-cell' : '';
+          rowsHtml.push(`<tr><th>${g.label}</th><td class="${cls}" style="background-color:${bg};color:${fg};">${pct.toFixed(1)}%</td><td>${g.hits}/${g.total}</td></tr>`);
         }
         rowsHtml.push('</table>');
         parts.push(rowsHtml.join(''));
@@ -555,22 +629,30 @@
 
       const xVals = new Map();
       const yVals = new Map();
-      const combos = new Map();
+      const combos = new Map(); // key -> { total, hits }
 
+      // First pass: aggregate totals for axes and combos
       for (const r of rows) {
         const xMeta = xFactor.normalize(xFactor.get(r));
         const yMeta = yFactor.normalize(yFactor.get(r));
         if (!xMeta || !yMeta) continue;
-        const key = `${xMeta.key}|||${yMeta.key}`;
 
-        if (!xVals.has(xMeta.key)) xVals.set(xMeta.key, { ...xMeta, count: 0 });
-        xVals.get(xMeta.key).count++;
+        const xKey = xMeta.key;
+        const yKey = yMeta.key;
+        const comboKey = `${xKey}|||${yKey}`;
 
-        if (!yVals.has(yMeta.key)) yVals.set(yMeta.key, { ...yMeta, count: 0 });
-        yVals.get(yMeta.key).count++;
+        if (!xVals.has(xKey)) xVals.set(xKey, { ...xMeta, total: 0, hits: 0 });
+        const xEntry = xVals.get(xKey);
+        xEntry.total++;
+        if (isAdvancing(r, threshold)) xEntry.hits++;
 
-        if (!combos.has(key)) combos.set(key, { total: 0, hits: 0 });
-        const c = combos.get(key);
+        if (!yVals.has(yKey)) yVals.set(yKey, { ...yMeta, total: 0, hits: 0 });
+        const yEntry = yVals.get(yKey);
+        yEntry.total++;
+        if (isAdvancing(r, threshold)) yEntry.hits++;
+
+        if (!combos.has(comboKey)) combos.set(comboKey, { total: 0, hits: 0 });
+        const c = combos.get(comboKey);
         c.total += 1;
         if (isAdvancing(r, threshold)) c.hits += 1;
       }
@@ -579,12 +661,35 @@
       let yList = Array.from(yVals.values());
 
       if (!isLowData) {
-        xList = xList.filter((x) => x.count > 2);
-        yList = yList.filter((y) => y.count > 2);
+        xList = xList.filter((x) => x.total > 2);
+        yList = yList.filter((y) => y.total > 2);
       }
 
-      xList.sort((a, b) => a.sort - b.sort);
-      yList.sort((a, b) => a.sort - b.sort);
+      // Collapse axes
+      const { groups: xCollapsed, mergeMap: xMap } = collapseGroups(xList, xFactor.id);
+      const { groups: yCollapsed, mergeMap: yMap } = collapseGroups(yList, yFactor.id);
+
+      xList = xCollapsed;
+      yList = yCollapsed;
+
+      // Re-aggregate combos based on new keys
+      const newCombos = new Map();
+
+      for (const [oldKey, val] of combos.entries()) {
+        const [oldX, oldY] = oldKey.split('|||');
+
+        // If the old key isn't in the map (e.g. filtered out by low data), skip
+        if (!xMap.has(oldX) || !yMap.has(oldY)) continue;
+
+        const newX = xMap.get(oldX);
+        const newY = yMap.get(oldY);
+        const newKey = `${newX}|||${newY}`;
+
+        if (!newCombos.has(newKey)) newCombos.set(newKey, { total: 0, hits: 0 });
+        const c = newCombos.get(newKey);
+        c.total += val.total;
+        c.hits += val.hits;
+      }
 
       if (!xList.length || !yList.length) {
         tableContainer.innerHTML = '<p>No data for this factor pair.</p>';
@@ -603,13 +708,14 @@
         out.push(`<tr><th>${y.label}</th>`);
         for (const x of xList) {
           const key = `${x.key}|||${y.key}`;
-          const cell = combos.get(key);
+          const cell = newCombos.get(key);
           if (!cell) {
             out.push('<td class="missing">–</td>');
           } else {
             const pct = (cell.hits / cell.total) * 100;
             const { bg, fg } = colorForPct(pct);
-            out.push(`<td style="background:${bg};color:${fg};">${pct.toFixed(1)}%<br><small>(n=${cell.total})</small></td>`);
+            const cls = cell.total <= 3 ? 'low-data-cell' : '';
+            out.push(`<td class="${cls}" style="background-color:${bg};color:${fg};">${pct.toFixed(1)}%<br><small>${cell.hits}/${cell.total}</small></td>`);
           }
         }
         out.push('</tr>');
