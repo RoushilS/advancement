@@ -610,7 +610,7 @@
       renderFactorTables(filtered, threshold);
       renderGrid(filtered, threshold, axisX, axisY);
 
-      statusEl.textContent = `Filtered to ${filtered.length} team rows across ${eventCount} events | Team range: ${minTeams}-${maxTeams} | Adv rank success ≤ ${threshold}`;
+      statusEl.innerHTML = `Filtered to ${filtered.length} team rows across ${eventCount} events | Team range: ${minTeams}-${maxTeams} | Adv rank success ≤ ${threshold} | <strong>Percentages are based on historical events.</strong>`;
     }
 
     controls.addEventListener('submit', (e) => {
