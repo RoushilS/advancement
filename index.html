@@ -257,6 +257,7 @@
     </div>
   </form>
   <div id="status"></div>
+  <div id="warning-container"></div>
   <div id="factor-tables"></div>
   <div id="table-container"></div>
 
@@ -498,7 +499,9 @@
     }
 
     function renderFactorTables(rows, threshold) {
+      const isLowData = rows.length <= 100;
       const parts = [];
+
       for (const factor of FACTORS) {
         if (!selectedTables.has(factor.id)) continue;
         const groups = new Map();
@@ -511,9 +514,15 @@
           g.total += 1;
           if (isAdvancing(r, threshold)) g.hits += 1;
         }
-        const sorted = Array.from(groups.values()).sort((a, b) => a.sort - b.sort);
+
+        let sorted = Array.from(groups.values());
+        if (!isLowData) {
+          sorted = sorted.filter((g) => g.total > 2);
+        }
+        sorted.sort((a, b) => a.sort - b.sort);
+
         if (!sorted.length) {
-          parts.push(`<table><caption>${factor.fullLabel || factor.label}</caption><tr><td class="missing">No data</td></tr></table>`);
+          parts.push(`<table><caption>${factor.fullLabel || factor.label}</caption><tr><td class="missing">No data${!isLowData ? ' (n>2)' : ''}</td></tr></table>`);
           continue;
         }
         const rowsHtml = [];
@@ -536,6 +545,7 @@
     }
 
     function renderGrid(rows, threshold, xId, yId) {
+      const isLowData = rows.length <= 100;
       const xFactor = FACTOR_LOOKUP[xId];
       const yFactor = FACTOR_LOOKUP[yId];
       if (!xFactor || !yFactor || xFactor.id === yFactor.id) {
@@ -552,16 +562,29 @@
         const yMeta = yFactor.normalize(yFactor.get(r));
         if (!xMeta || !yMeta) continue;
         const key = `${xMeta.key}|||${yMeta.key}`;
-        if (!xVals.has(xMeta.key)) xVals.set(xMeta.key, xMeta);
-        if (!yVals.has(yMeta.key)) yVals.set(yMeta.key, yMeta);
+
+        if (!xVals.has(xMeta.key)) xVals.set(xMeta.key, { ...xMeta, count: 0 });
+        xVals.get(xMeta.key).count++;
+
+        if (!yVals.has(yMeta.key)) yVals.set(yMeta.key, { ...yMeta, count: 0 });
+        yVals.get(yMeta.key).count++;
+
         if (!combos.has(key)) combos.set(key, { total: 0, hits: 0 });
         const c = combos.get(key);
         c.total += 1;
         if (isAdvancing(r, threshold)) c.hits += 1;
       }
 
-      const xList = Array.from(xVals.values()).sort((a, b) => a.sort - b.sort);
-      const yList = Array.from(yVals.values()).sort((a, b) => a.sort - b.sort);
+      let xList = Array.from(xVals.values());
+      let yList = Array.from(yVals.values());
+
+      if (!isLowData) {
+        xList = xList.filter((x) => x.count > 2);
+        yList = yList.filter((y) => y.count > 2);
+      }
+
+      xList.sort((a, b) => a.sort - b.sort);
+      yList.sort((a, b) => a.sort - b.sort);
 
       if (!xList.length || !yList.length) {
         tableContainer.innerHTML = '<p>No data for this factor pair.</p>';
@@ -606,6 +629,13 @@
 
       const filtered = DATA.filter((r) => r.team_count >= minTeams && r.team_count <= maxTeams && r.adv_rank != null);
       const eventCount = new Set(filtered.map((r) => `${r.season}-${r.event_code}`)).size;
+
+      const warningEl = document.getElementById('warning-container');
+      if (warningEl) {
+        warningEl.innerHTML = filtered.length <= 100
+          ? '<p style="color:orange; font-weight:bold; margin: 10px 0;">Warning: Low data, percentages could be inaccurate</p>'
+          : '';
+      }
 
       renderFactorTables(filtered, threshold);
       renderGrid(filtered, threshold, axisX, axisY);
