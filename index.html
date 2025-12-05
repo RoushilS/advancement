@@ -241,7 +241,7 @@
       <label id="maxTeamsLabel" style="display:none">Max teams
         <input type="number" id="maxTeams" value="30" min="0" />
       </label>
-      <label>Adv rank threshold (≤)
+      <label>Teams Advancing
         <input type="number" id="threshold" value="6" min="1" />
       </label>
       <button type="submit">Update</button>
@@ -640,7 +640,7 @@
       renderFactorTables(filtered, threshold);
       renderGrid(filtered, threshold, axisX, axisY);
 
-      statusEl.innerHTML = `Filtered to ${filtered.length} team rows across ${eventCount} events | Team range: ${minTeams}-${maxTeams} | Adv rank success ≤ ${threshold} | <strong>Percentages are based on historical events.</strong>`;
+      statusEl.innerHTML = `Filtered to ${filtered.length} team rows across ${eventCount} events | Team range: ${minTeams}-${maxTeams} | Teams advancing ≤ ${threshold} | <strong>Percentages are based on historical events.</strong>`;
     }
 
     controls.addEventListener('submit', (e) => {
