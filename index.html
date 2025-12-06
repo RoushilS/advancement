@@ -12,7 +12,7 @@
     gtag('js', new Date());
     gtag('config', 'G-4T577GC8SB');
   </script>
-  <title>Seed thresholds explorer</title>
+  <title>Advancement odds for FTC</title>
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -20,6 +20,7 @@
       max-width: 1200px;
       margin: 0 auto;
       box-sizing: border-box;
+      background: #f5f5f5;
     }
 
     h1 {
@@ -30,51 +31,98 @@
     form {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      align-items: flex-end;
+      gap: 16px;
+      align-items: center;
       margin-bottom: 16px;
     }
 
-    label {
+    .control-row {
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .control-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       font-size: 14px;
       color: #444;
     }
 
-    .checkbox-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 12px;
-      align-items: center;
-      width: 100%;
-      margin-top: 8px;
+    .control-group span {
+      font-weight: 500;
     }
 
-    .checkbox-group label {
-      flex-direction: row;
-      align-items: center;
-      gap: 6px;
-      margin: 0;
-    }
-
-    input[type=number],
-    select {
-      padding: 6px 8px;
+    select,
+    input[type=number] {
+      padding: 8px 12px;
       font-size: 14px;
-      min-width: 140px;
-      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    select {
+      min-width: 100px;
+    }
+
+    input[type=number] {
+      width: 70px;
     }
 
     button {
-      padding: 8px 14px;
+      padding: 8px 16px;
       font-size: 14px;
       cursor: pointer;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .separator {
+      width: 1px;
+      height: 24px;
+      background: #ddd;
+    }
+
+    .toggle-group {
+      display: flex;
+      gap: 2px;
+      background: #e5e7eb;
+      padding: 3px;
+      border-radius: 8px;
+    }
+
+    .toggle-group label {
+      padding: 6px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+      color: #555;
+      user-select: none;
+    }
+
+    .toggle-group label:has(input:checked) {
+      background: #fff;
+      color: #111;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .toggle-group input {
+      display: none;
     }
 
     #factor-tables {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 12px;
       margin-top: 16px;
       align-items: start;
@@ -83,18 +131,28 @@
     #table-container {
       position: relative;
       overflow: visible;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid #ddd;
     }
 
     table {
       border-collapse: collapse;
-      margin: 18px 0;
+      margin: 0;
       width: 100%;
       table-layout: fixed;
     }
 
+    #factor-tables .factor-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
     #factor-tables table {
       width: 100%;
-      white-space: normal;
     }
 
     .grid-table {
@@ -105,9 +163,9 @@
     th,
     td {
       border: 1px solid #ddd;
-      padding: 6px 8px;
+      padding: 4px 8px;
       text-align: center;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     th {
@@ -119,6 +177,12 @@
       margin-bottom: 6px;
     }
 
+    .grid-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .grid-caption {
       font-weight: 600;
       margin-bottom: 6px;
@@ -126,6 +190,7 @@
     }
 
     .grid-scroll {
+      max-width: 100%;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
     }
@@ -141,7 +206,13 @@
       font-size: 14px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 890px) {
+      #factor-tables {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
       body {
         padding: 16px;
       }
@@ -151,72 +222,78 @@
       }
 
       form {
-        gap: 12px;
-      }
-
-      .primary-controls {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 12px;
-        align-items: flex-end;
+      }
+
+      .control-row {
         width: 100%;
       }
 
-      label {
-        width: 100%;
+      #teams-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
       }
 
-      /* Allow range and threshold to sit side-by-side if space permits */
-      .primary-controls label {
-        flex: 1 1 140px;
+      #teams-row .control-group {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
       }
 
-      input[type=number],
-      select {
+      #teams-row select,
+      #teams-row input[type="number"] {
         width: 100%;
+        box-sizing: border-box;
+      }
+
+      #toggle-row {
+        font-size: 14px;
+        color: #444;
+        gap: 8px;
+      }
+
+      #toggle-row > span {
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .toggle-group {
+        flex: 1;
         min-width: 0;
       }
 
-      button {
+      .toggle-group label {
+        flex: 1;
+        text-align: center;
+        min-width: 0;
+        padding: 6px 8px;
+      }
+
+      button[type="submit"] {
         width: 100%;
-        padding: 12px;
-        font-size: 16px;
-        margin-top: 8px;
       }
 
-      .checkbox-group {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        justify-content: flex-start;
-        gap: 8px;
-        padding-bottom: 4px;
-        -webkit-overflow-scrolling: touch;
-        /* Force new row on desktop */
-      }
-
-      .checkbox-group label {
-        white-space: nowrap;
+      .separator {
+        display: none;
       }
 
       #factor-tables {
         grid-template-columns: 1fr;
       }
+    }
 
-      .secondary-controls {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin-top: 8px;
+    @media (max-width: 360px) {
+      .toggle-group {
+        gap: 1px;
       }
-    }
 
-    /* Desktop styles for new structure */
-    .primary-controls {
-      display: contents;
-    }
-
-    .secondary-controls {
-      display: contents;
+      .toggle-group label {
+        padding: 6px 8px;
+        font-size: 12px;
+      }
     }
 
     .low-data-cell {
@@ -226,42 +303,107 @@
           rgba(0, 0, 0, 0.08) 5px,
           rgba(0, 0, 0, 0.08) 10px);
     }
+
+    #learn-more-link {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    #learn-more-link:hover {
+      opacity: 0.8;
+    }
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal {
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 16px;
+      position: relative;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .modal h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+
+    .modal h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .modal p {
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #666;
+      padding: 0;
+      line-height: 1;
+    }
+
+    .modal-close:hover {
+      color: #000;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Advancement odds by awards, playoffs, alliance seed, and qual rank</h1>
+  <h1>Advancement odds for FTC</h1>
   <form id="controls">
-    <div class="primary-controls">
-      <label>Team range
+    <div class="control-row" id="teams-row">
+      <div class="control-group">
+        <span>Teams</span>
         <select id="teamRange">
-          <option value="0-10">(0-10)</option>
-          <option value="11-20">(11-20)</option>
-          <option value="21-30" selected>(21-30)</option>
-          <option value="31-40">(31-40)</option>
+          <option value="0-10">0-10</option>
+          <option value="11-20">11-20</option>
+          <option value="21-30" selected>21-30</option>
+          <option value="31-40">31-40</option>
           <option value="40+">40+</option>
           <option value="custom">Custom</option>
         </select>
-      </label>
-      <label id="minTeamsLabel" style="display:none">Min teams
-        <input type="number" id="minTeams" value="21" min="0" />
-      </label>
-      <label id="maxTeamsLabel" style="display:none">Max teams
-        <input type="number" id="maxTeams" value="30" min="0" />
-      </label>
-      <label>Teams Advancing
+        <span id="minTeamsLabel" style="display:none">
+          <input type="number" id="minTeams" value="21" min="0" /> –
+          <input type="number" id="maxTeams" value="30" min="0" />
+        </span>
+      </div>
+      <div class="control-group">
+        <span>Advancing</span>
         <input type="number" id="threshold" value="6" min="1" />
-      </label>
-      <button type="submit">Update</button>
+      </div>
     </div>
-    <div class="secondary-controls">
-      <label>2-way table: columns (X axis)
-        <select id="axisX"></select>
-      </label>
-      <label>2-way table: rows (Y axis)
-        <select id="axisY"></select>
-      </label>
-      <div class="checkbox-group" id="tableToggles"></div>
+    <button type="submit">Update</button>
+    <div class="separator"></div>
+    <div class="control-row" id="toggle-row">
+      <span>2-way table</span>
+      <div class="toggle-group" id="gridAxisToggles"></div>
     </div>
   </form>
   <div id="status"></div>
@@ -269,20 +411,35 @@
   <div id="factor-tables"></div>
   <div id="table-container"></div>
 
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <h2>How percentages are calculated</h2>
+      <p>Percentages show the <strong>historical advancement rate</strong> for teams in each category based on this season's events.</p>
+      <p>For example, if "2nd place award" shows "75%" with "15/20", it means 20 teams won a 2nd place award this season (at events matching your selected team size), and 15 of them finished with an advancement rank at or above the "Advancing" cutoff.</p>
+      <h3>2-way table</h3>
+      <p>The 2-way table shows advancement rates for combinations of two factors. For example, if you select "Awards" and "Playoffs", each cell shows the advancement rate for teams with that specific award result AND that specific playoff result.</p>
+      <h3>Data source</h3>
+      <p>Data is aggregated from FTC qualifier and championship events this season. The "Teams" filter lets you focus on events of similar size to yours, and "Advancing" sets the cutoff for how many teams advance.</p>
+      <h3>Why some patterns seem unexpected</h3>
+      <p>You may notice cases where a "worse" result has a higher advancement rate than a "better" one (e.g., a lower qual rank outperforming a higher one). This happens because the data reflects natural variation across different events with different teams. With more events, these small differences would likely even out.</p>
+      <h3>Striped cells</h3>
+      <p>Cells with diagonal stripes indicate low sample size (3 or fewer teams). These percentages may be less reliable.</p>
+    </div>
+  </div>
+
   <script>
     const controls = document.getElementById('controls');
     const rangeSelect = document.getElementById('teamRange');
     const minInput = document.getElementById('minTeams');
     const maxInput = document.getElementById('maxTeams');
     const thresholdInput = document.getElementById('threshold');
-    const axisXSelect = document.getElementById('axisX');
-    const axisYSelect = document.getElementById('axisY');
-    const tableToggles = document.getElementById('tableToggles');
+    const gridAxisToggles = document.getElementById('gridAxisToggles');
     const statusEl = document.getElementById('status');
     const factorTables = document.getElementById('factor-tables');
     const tableContainer = document.getElementById('table-container');
     let DATA = [];
-    let selectedTables = new Set();
+    let selectedGridAxes = new Set(['playoff', 'award']); // default selection
 
     const RANGE_PRESETS = {
       '0-10': { min: 0, max: 10 },
@@ -369,13 +526,13 @@
         normalize: (val) => {
           if (val == null || val === '') return null;
           if (val === 0) {
-            return { key: '0', label: 'Not selected (0 pts)', sort: 999 };
+            return { key: '0', label: 'Not selected (0)', sort: 999 };
           }
           const seed = Number.isFinite(val) ? 21 - val : null;
-          const seedLabel = Number.isFinite(seed) ? `Seed ${seed}` : `${val} pts`;
+          const seedLabel = Number.isFinite(seed) ? `Seed ${seed}` : `${val}`;
           return {
             key: String(val),
-            label: `${seedLabel} (${val} pts)`,
+            label: `${seedLabel} (${val})`,
             sort: Number.isFinite(seed) ? seed : 1000 + (100 - val),
           };
         },
@@ -400,7 +557,6 @@
     ];
 
     const FACTOR_LOOKUP = Object.fromEntries(FACTORS.map((f) => [f.id, f]));
-    const getSelectedTableKeys = () => new Set(Array.from(tableToggles?.querySelectorAll('input[type=checkbox]:checked') ?? []).map((i) => i.value));
 
     function parseCsvLine(line) {
       const out = [];
@@ -466,11 +622,8 @@
       const val = rangeSelect.value;
       const isCustom = val === 'custom';
 
-      const minLabel = document.getElementById('minTeamsLabel');
-      const maxLabel = document.getElementById('maxTeamsLabel');
-
-      if (minLabel) minLabel.style.display = isCustom ? 'flex' : 'none';
-      if (maxLabel) maxLabel.style.display = isCustom ? 'flex' : 'none';
+      const customInputs = document.getElementById('minTeamsLabel');
+      if (customInputs) customInputs.style.display = isCustom ? 'inline-flex' : 'none';
 
       if (isCustom) {
         minInput.disabled = false;
@@ -490,20 +643,24 @@
       return row.adv_rank <= threshold;
     }
 
-    function renderTableToggles() {
-      if (!tableToggles) return;
-      tableToggles.innerHTML = '';
+    function renderGridAxisToggles() {
+      if (!gridAxisToggles) return;
+      gridAxisToggles.innerHTML = '';
+
       FACTORS.forEach((f) => {
-        const label = document.createElement('label');
+        const labelEl = document.createElement('label');
         const box = document.createElement('input');
         box.type = 'checkbox';
         box.value = f.id;
-        box.checked = true;
-        label.appendChild(box);
-        label.appendChild(document.createTextNode(f.label));
-        tableToggles.appendChild(label);
+        box.checked = selectedGridAxes.has(f.id);
+        labelEl.appendChild(box);
+        labelEl.appendChild(document.createTextNode(f.label));
+        gridAxisToggles.appendChild(labelEl);
       });
-      selectedTables = getSelectedTableKeys();
+    }
+
+    function getSelectedGridAxes() {
+      return new Set(Array.from(gridAxisToggles?.querySelectorAll('input[type=checkbox]:checked') ?? []).map((i) => i.value));
     }
 
     function collapseGroups(groups, factorId) {
@@ -522,8 +679,8 @@
         for (let i = sorted.length - 1; i >= 0; i--) {
           const g = sorted[i];
 
-          // Constraint: Do not collapse ranks <= 12
-          if (g.sort <= 12) {
+          // Constraint: Do not collapse ranks <= 11
+          if (g.sort <= 11) {
             break;
           }
 
@@ -574,7 +731,6 @@
       const parts = [];
 
       for (const factor of FACTORS) {
-        if (!selectedTables.has(factor.id)) continue;
         const groups = new Map();
         for (const r of rows) {
           const meta = factor.normalize(factor.get(r));
@@ -599,6 +755,7 @@
           continue;
         }
         const rowsHtml = [];
+        rowsHtml.push('<div class="factor-card">');
         rowsHtml.push('<table class="factor-table">');
         rowsHtml.push(`<caption>${factor.fullLabel || factor.label}</caption>`);
         rowsHtml.push('<tr><th>Value</th><th>Advance chance</th><th>Teams</th></tr>');
@@ -609,6 +766,7 @@
           rowsHtml.push(`<tr><th>${g.label}</th><td class="${cls}" style="background-color:${bg};color:${fg};">${pct.toFixed(1)}%</td><td>${g.hits}/${g.total}</td></tr>`);
         }
         rowsHtml.push('</table>');
+        rowsHtml.push('</div>');
         parts.push(rowsHtml.join(''));
       }
       if (!parts.length) {
@@ -697,7 +855,7 @@
       }
 
       const out = [];
-      const captionText = `${yFactor.fullLabel || yFactor.label} \\ ${xFactor.fullLabel || xFactor.label} (adv rank ≤ ${threshold})`;
+      const captionText = `${yFactor.fullLabel || yFactor.label} vs ${xFactor.fullLabel || xFactor.label}`;
 
       out.push('<table class="grid-table">');
       out.push('<thead>');
@@ -723,15 +881,22 @@
       out.push('</tbody>');
       out.push('</table>');
 
-      tableContainer.innerHTML = `<div class="grid-caption">${captionText}</div><div class="grid-scroll">${out.join('')}</div>`;
+      tableContainer.innerHTML = `<div class="grid-wrapper"><div class="grid-caption">${captionText}</div><div class="grid-scroll">${out.join('')}</div></div>`;
+    }
+
+    function countUniqueValues(rows, factor) {
+      const seen = new Set();
+      for (const r of rows) {
+        const meta = factor.normalize(factor.get(r));
+        if (meta) seen.add(meta.key);
+      }
+      return seen.size;
     }
 
     function render() {
       const minTeams = Math.max(0, parseInt(minInput.value, 10) || 0);
       const maxTeams = Math.max(minTeams, parseInt(maxInput.value, 10) || minTeams);
       const threshold = Math.max(1, parseInt(thresholdInput.value, 10) || 1);
-      const axisX = axisXSelect.value || 'playoff';
-      const axisY = axisYSelect.value || 'award';
 
       const filtered = DATA.filter((r) => r.team_count >= minTeams && r.team_count <= maxTeams && r.adv_rank != null);
       const eventCount = new Set(filtered.map((r) => `${r.season}-${r.event_code}`)).size;
@@ -744,9 +909,28 @@
       }
 
       renderFactorTables(filtered, threshold);
-      renderGrid(filtered, threshold, axisX, axisY);
 
-      statusEl.innerHTML = `Filtered to ${filtered.length} team rows across ${eventCount} events | Team range: ${minTeams}-${maxTeams} | Teams advancing ≤ ${threshold} | <strong>Percentages are based on historical events.</strong>`;
+      // Determine X and Y axes based on selected checkboxes
+      const selectedAxes = Array.from(selectedGridAxes);
+      if (selectedAxes.length === 2) {
+        const factor1 = FACTOR_LOOKUP[selectedAxes[0]];
+        const factor2 = FACTOR_LOOKUP[selectedAxes[1]];
+        const count1 = countUniqueValues(filtered, factor1);
+        const count2 = countUniqueValues(filtered, factor2);
+
+        // On mobile, put more values on Y (rows) for less horizontal scrolling
+        // On desktop, put more values on X (columns) for a wider table
+        const isMobile = window.innerWidth <= 600;
+        const moreOnY = isMobile ? (count1 >= count2) : (count1 <= count2);
+        const axisX = moreOnY ? selectedAxes[1] : selectedAxes[0];
+        const axisY = moreOnY ? selectedAxes[0] : selectedAxes[1];
+
+        renderGrid(filtered, threshold, axisX, axisY);
+      } else {
+        tableContainer.innerHTML = '<p style="color:#666; text-align:center;">Select exactly 2 factors for the 2-way table.</p>';
+      }
+
+      statusEl.innerHTML = `Filtered to ${filtered.length} teams across ${eventCount} events | <strong>Percentages are based on historical events.</strong> <a href="#" id="learn-more-link">ⓘ Learn more</a>`;
     }
 
     controls.addEventListener('submit', (e) => {
@@ -764,21 +948,26 @@
       render();
       trackEvent('select_team_range', { range_value: rangeSelect.value });
     });
-    axisXSelect.addEventListener('change', () => {
-      render();
-      trackEvent('change_axis_x', { factor_id: axisXSelect.value });
-    });
-    axisYSelect.addEventListener('change', () => {
-      render();
-      trackEvent('change_axis_y', { factor_id: axisYSelect.value });
-    });
-    tableToggles.addEventListener('change', (e) => {
-      selectedTables = getSelectedTableKeys();
-      render();
+    gridAxisToggles.addEventListener('change', (e) => {
       if (e.target && e.target.type === 'checkbox') {
-        trackEvent('toggle_factor_table', {
-          factor_id: e.target.value,
-          visible: e.target.checked
+        const value = e.target.value;
+        if (e.target.checked) {
+          // If already have 2 selected, uncheck the oldest one
+          if (selectedGridAxes.size >= 2) {
+            const first = selectedGridAxes.values().next().value;
+            selectedGridAxes.delete(first);
+            // Uncheck the corresponding checkbox
+            const box = gridAxisToggles.querySelector(`input[value="${first}"]`);
+            if (box) box.checked = false;
+          }
+          selectedGridAxes.add(value);
+        } else {
+          selectedGridAxes.delete(value);
+        }
+        render();
+        trackEvent('toggle_grid_axis', {
+          factor_id: value,
+          selected: e.target.checked
         });
       }
     });
@@ -791,18 +980,28 @@
     }
 
     applyRangePreset();
+    renderGridAxisToggles();
 
-    for (const sel of [axisXSelect, axisYSelect]) {
-      FACTORS.forEach((f) => {
-        const opt = document.createElement('option');
-        opt.value = f.id;
-        opt.textContent = f.label;
-        sel.appendChild(opt);
-      });
-    }
-    axisXSelect.value = 'playoff';
-    axisYSelect.value = 'award';
-    renderTableToggles();
+    // Modal functionality
+    const modalOverlay = document.getElementById('modal-overlay');
+    const modalClose = document.querySelector('.modal-close');
+
+    statusEl.addEventListener('click', (e) => {
+      if (e.target && e.target.id === 'learn-more-link') {
+        e.preventDefault();
+        modalOverlay.classList.add('active');
+      }
+    });
+
+    modalClose.addEventListener('click', () => {
+      modalOverlay.classList.remove('active');
+    });
+
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('active');
+      }
+    });
 
     loadCsv('advancementData.csv')
       .then((rows) => { DATA = rows; render(); })
