@@ -990,17 +990,34 @@
       if (e.target && e.target.id === 'learn-more-link') {
         e.preventDefault();
         modalOverlay.classList.add('active');
+        trackEvent('open_learn_more_modal');
       }
     });
 
     modalClose.addEventListener('click', () => {
       modalOverlay.classList.remove('active');
+      trackEvent('close_modal', { method: 'close_button' });
     });
 
     modalOverlay.addEventListener('click', (e) => {
       if (e.target === modalOverlay) {
         modalOverlay.classList.remove('active');
+        trackEvent('close_modal', { method: 'overlay_click' });
       }
+    });
+
+    // Track threshold input changes
+    thresholdInput.addEventListener('change', () => {
+      trackEvent('change_threshold', { threshold: thresholdInput.value });
+    });
+
+    // Track custom team range inputs
+    minInput.addEventListener('change', () => {
+      trackEvent('change_custom_min_teams', { min_teams: minInput.value });
+    });
+
+    maxInput.addEventListener('change', () => {
+      trackEvent('change_custom_max_teams', { max_teams: maxInput.value });
     });
 
     loadCsv('advancementData.csv')
