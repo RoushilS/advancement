@@ -231,22 +231,27 @@
         width: 100%;
       }
 
-      #teams-row {
+      #teams-row,
+      #custom-range-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
       }
 
-      #teams-row .control-group {
+      #teams-row .control-group,
+      #custom-range-row .control-group {
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 65px 1fr;
         gap: 8px;
       }
 
       #teams-row select,
-      #teams-row input[type="number"] {
+      #teams-row input[type="number"],
+      #custom-range-row select,
+      #custom-range-row input[type="number"] {
         width: 100%;
         box-sizing: border-box;
+        min-height: 38px;
       }
 
       #toggle-row {
@@ -389,14 +394,20 @@
           <option value="40+">40+</option>
           <option value="custom">Custom</option>
         </select>
-        <span id="minTeamsLabel" style="display:none">
-          <input type="number" id="minTeams" value="21" min="0" /> –
-          <input type="number" id="maxTeams" value="30" min="0" />
-        </span>
       </div>
       <div class="control-group">
         <span>Advancing</span>
         <input type="number" id="threshold" value="6" min="1" />
+      </div>
+    </div>
+    <div class="control-row" id="custom-range-row" style="display:none">
+      <div class="control-group">
+        <span>Min</span>
+        <input type="number" id="minTeams" value="21" min="0" />
+      </div>
+      <div class="control-group">
+        <span>Max</span>
+        <input type="number" id="maxTeams" value="30" min="0" />
       </div>
     </div>
     <button type="submit">Update</button>
@@ -622,8 +633,8 @@
       const val = rangeSelect.value;
       const isCustom = val === 'custom';
 
-      const customInputs = document.getElementById('minTeamsLabel');
-      if (customInputs) customInputs.style.display = isCustom ? 'inline-flex' : 'none';
+      const customRow = document.getElementById('custom-range-row');
+      if (customRow) customRow.style.display = isCustom ? 'flex' : 'none';
 
       if (isCustom) {
         minInput.disabled = false;
