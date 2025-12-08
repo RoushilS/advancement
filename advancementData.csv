@@ -1,27 +1,20 @@
 season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_rank,qual_points,alliance_selection_points,award_points,playoff_points,total_points
-2025,AUBRQ2,Brisbane South Qualifier,23,45,24089,1,1,16,20,30,40,106
-2025,AUBRQ2,Brisbane South Qualifier,23,45,17556,2,18,7,16,60,5,88
-2025,AUBRQ2,Brisbane South Qualifier,23,45,19450,3,2,15,20,0,40,75
-2025,AUBRQ2,Brisbane South Qualifier,23,45,30405,4,8,11,19,15,20,65
-2025,AUBRQ2,Brisbane South Qualifier,23,45,26716,5,3,14,19,0,20,53
-2025,AUBRQ2,Brisbane South Qualifier,23,45,30070,6,14,9,17,12,10,48
-2025,AUBRQ2,Brisbane South Qualifier,23,45,11505,7,5,13,17,6,10,46
-2025,AUBRQ2,Brisbane South Qualifier,23,45,31784,8,4,13,18,12,0,43
-2025,AUBRQ2,Brisbane South Qualifier,23,45,27373,9,9,11,18,12,0,41
-2025,AUBRQ2,Brisbane South Qualifier,23,45,23334,10,15,9,15,12,0,36
-2025,AUBRQ2,Brisbane South Qualifier,23,45,13626,11,6,12,16,0,5,33
-2025,AUBRQ2,Brisbane South Qualifier,23,45,26085,12,10,10,15,0,0,25
-2025,AUBRQ2,Brisbane South Qualifier,23,45,14579,13,17,8,0,12,0,20
-2025,AUBRQ2,Brisbane South Qualifier,23,45,11506,14,19,7,0,12,0,19
-2025,AUBRQ2,Brisbane South Qualifier,23,45,12993,15,21,6,0,12,0,18
-2025,AUBRQ2,Brisbane South Qualifier,23,45,14466,16,22,5,0,12,0,17
-2025,AUBRQ2,Brisbane South Qualifier,23,45,32323,17,7,12,0,0,0,12
-2025,AUBRQ2,Brisbane South Qualifier,23,45,14340,18,11,10,0,0,0,10
-2025,AUBRQ2,Brisbane South Qualifier,23,45,31534,19,12,10,0,0,0,10
-2025,AUBRQ2,Brisbane South Qualifier,23,45,23333,20,13,9,0,0,0,9
-2025,AUBRQ2,Brisbane South Qualifier,23,45,18187,21,16,8,0,0,0,8
-2025,AUBRQ2,Brisbane South Qualifier,23,45,23332,22,20,6,0,0,0,6
-2025,AUBRQ2,Brisbane South Qualifier,23,45,25827,23,23,4,0,0,0,4
+2025,AUSYQ1,Sydney South Qualifier,16,30,18306,1,7,11,18,60,10,99
+2025,AUSYQ1,Sydney South Qualifier,16,30,18360,2,1,16,20,12,40,88
+2025,AUSYQ1,Sydney South Qualifier,16,30,23636,3,3,13,20,0,40,73
+2025,AUSYQ1,Sydney South Qualifier,16,30,11148,4,11,8,19,12,20,59
+2025,AUSYQ1,Sydney South Qualifier,16,30,33660,5,2,15,19,0,20,54
+2025,AUSYQ1,Sydney South Qualifier,16,30,27262,6,4,13,18,12,10,53
+2025,AUSYQ1,Sydney South Qualifier,16,30,23300,7,6,11,17,12,5,45
+2025,AUSYQ1,Sydney South Qualifier,16,30,32134,8,10,9,0,30,0,39
+2025,AUSYQ1,Sydney South Qualifier,16,30,25573,9,5,12,17,0,5,34
+2025,AUSYQ1,Sydney South Qualifier,16,30,24961,10,8,10,0,12,0,22
+2025,AUSYQ1,Sydney South Qualifier,16,30,21657,11,12,8,0,12,0,20
+2025,AUSYQ1,Sydney South Qualifier,16,30,29081,12,15,6,0,12,0,18
+2025,AUSYQ1,Sydney South Qualifier,16,30,32401,13,14,6,0,12,0,18
+2025,AUSYQ1,Sydney South Qualifier,16,30,27375,14,9,9,0,0,0,9
+2025,AUSYQ1,Sydney South Qualifier,16,30,19341,15,13,7,0,0,0,7
+2025,AUSYQ1,Sydney South Qualifier,16,30,21472,16,16,4,0,0,0,4
 2025,AUADQ,South Australia Qualifier,12,24,30781,1,2,14,20,60,40,134
 2025,AUADQ,South Australia Qualifier,12,24,15215,2,1,16,20,12,40,88
 2025,AUADQ,South Australia Qualifier,12,24,18611,3,6,10,17,30,10,67
@@ -51,22 +44,71 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,AUBRQ1,Brisbane North Qualifier,17,33,12993,15,9,10,0,0,0,10
 2025,AUBRQ1,Brisbane North Qualifier,17,33,23454,16,13,8,0,0,0,8
 2025,AUBRQ1,Brisbane North Qualifier,17,33,14579,17,17,4,0,0,0,4
-2025,AUSYQ1,Sydney South Qualifier,16,30,18306,1,7,11,18,60,10,99
-2025,AUSYQ1,Sydney South Qualifier,16,30,18360,2,1,16,20,12,40,88
-2025,AUSYQ1,Sydney South Qualifier,16,30,23636,3,3,13,20,0,40,73
-2025,AUSYQ1,Sydney South Qualifier,16,30,11148,4,11,8,19,12,20,59
-2025,AUSYQ1,Sydney South Qualifier,16,30,33660,5,2,15,19,0,20,54
-2025,AUSYQ1,Sydney South Qualifier,16,30,27262,6,4,13,18,12,10,53
-2025,AUSYQ1,Sydney South Qualifier,16,30,23300,7,6,11,17,12,5,45
-2025,AUSYQ1,Sydney South Qualifier,16,30,32134,8,10,9,0,30,0,39
-2025,AUSYQ1,Sydney South Qualifier,16,30,25573,9,5,12,17,0,5,34
-2025,AUSYQ1,Sydney South Qualifier,16,30,24961,10,8,10,0,12,0,22
-2025,AUSYQ1,Sydney South Qualifier,16,30,21657,11,12,8,0,12,0,20
-2025,AUSYQ1,Sydney South Qualifier,16,30,29081,12,15,6,0,12,0,18
-2025,AUSYQ1,Sydney South Qualifier,16,30,32401,13,14,6,0,12,0,18
-2025,AUSYQ1,Sydney South Qualifier,16,30,27375,14,9,9,0,0,0,9
-2025,AUSYQ1,Sydney South Qualifier,16,30,19341,15,13,7,0,0,0,7
-2025,AUSYQ1,Sydney South Qualifier,16,30,21472,16,16,4,0,0,0,4
+2025,AUBRQ2,Brisbane South Qualifier,23,45,24089,1,1,16,20,30,40,106
+2025,AUBRQ2,Brisbane South Qualifier,23,45,17556,2,18,7,16,60,5,88
+2025,AUBRQ2,Brisbane South Qualifier,23,45,19450,3,2,15,20,0,40,75
+2025,AUBRQ2,Brisbane South Qualifier,23,45,30405,4,8,11,19,15,20,65
+2025,AUBRQ2,Brisbane South Qualifier,23,45,26716,5,3,14,19,0,20,53
+2025,AUBRQ2,Brisbane South Qualifier,23,45,30070,6,14,9,17,12,10,48
+2025,AUBRQ2,Brisbane South Qualifier,23,45,11505,7,5,13,17,6,10,46
+2025,AUBRQ2,Brisbane South Qualifier,23,45,31784,8,4,13,18,12,0,43
+2025,AUBRQ2,Brisbane South Qualifier,23,45,27373,9,9,11,18,12,0,41
+2025,AUBRQ2,Brisbane South Qualifier,23,45,23334,10,15,9,15,12,0,36
+2025,AUBRQ2,Brisbane South Qualifier,23,45,13626,11,6,12,16,0,5,33
+2025,AUBRQ2,Brisbane South Qualifier,23,45,26085,12,10,10,15,0,0,25
+2025,AUBRQ2,Brisbane South Qualifier,23,45,14579,13,17,8,0,12,0,20
+2025,AUBRQ2,Brisbane South Qualifier,23,45,11506,14,19,7,0,12,0,19
+2025,AUBRQ2,Brisbane South Qualifier,23,45,12993,15,21,6,0,12,0,18
+2025,AUBRQ2,Brisbane South Qualifier,23,45,14466,16,22,5,0,12,0,17
+2025,AUBRQ2,Brisbane South Qualifier,23,45,32323,17,7,12,0,0,0,12
+2025,AUBRQ2,Brisbane South Qualifier,23,45,14340,18,11,10,0,0,0,10
+2025,AUBRQ2,Brisbane South Qualifier,23,45,31534,19,12,10,0,0,0,10
+2025,AUBRQ2,Brisbane South Qualifier,23,45,23333,20,13,9,0,0,0,9
+2025,AUBRQ2,Brisbane South Qualifier,23,45,18187,21,16,8,0,0,0,8
+2025,AUBRQ2,Brisbane South Qualifier,23,45,23332,22,20,6,0,0,0,6
+2025,AUBRQ2,Brisbane South Qualifier,23,45,25827,23,23,4,0,0,0,4
+2025,AUCMP,Australia Championship,43,77,14380,1,2,16,19,60,20,115
+2025,AUCMP,Australia Championship,43,77,26000,2,1,16,20,30,40,106
+2025,AUCMP,Australia Championship,43,77,11148,3,9,13,20,12,40,85
+2025,AUCMP,Australia Championship,43,77,23636,4,6,14,19,6,20,59
+2025,AUCMP,Australia Championship,43,77,24089,5,8,13,17,12,10,52
+2025,AUCMP,Australia Championship,43,77,17556,6,18,10,16,15,0,41
+2025,AUCMP,Australia Championship,43,77,18360,7,4,14,17,0,10,41
+2025,AUCMP,Australia Championship,43,77,19296,8,11,12,14,12,0,38
+2025,AUCMP,Australia Championship,43,77,19450,9,12,12,13,12,0,37
+2025,AUCMP,Australia Championship,43,77,30070,10,7,13,15,0,5,33
+2025,AUCMP,Australia Championship,43,77,15215,11,3,15,18,0,0,33
+2025,AUCMP,Australia Championship,43,77,32920,12,5,14,16,0,0,30
+2025,AUCMP,Australia Championship,43,77,30405,13,28,8,15,0,5,28
+2025,AUCMP,Australia Championship,43,77,11146,14,22,9,18,0,0,27
+2025,AUCMP,Australia Championship,43,77,31784,15,10,12,14,0,0,26
+2025,AUCMP,Australia Championship,43,77,18306,16,15,11,0,12,0,23
+2025,AUCMP,Australia Championship,43,77,11143,17,19,10,13,0,0,23
+2025,AUCMP,Australia Championship,43,77,11258,18,20,10,0,12,0,22
+2025,AUCMP,Australia Championship,43,77,18363,19,30,8,0,12,0,20
+2025,AUCMP,Australia Championship,43,77,10517,20,36,6,0,12,0,18
+2025,AUCMP,Australia Championship,43,77,23334,22,25,9,0,6,0,15
+2025,AUCMP,Australia Championship,43,77,23369,23,23,9,0,6,0,15
+2025,AUCMP,Australia Championship,43,77,23875,24,29,8,0,6,0,14
+2025,AUCMP,Australia Championship,43,77,11506,25,37,6,0,6,0,12
+2025,AUCMP,Australia Championship,43,77,18228,26,38,5,0,6,0,11
+2025,AUCMP,Australia Championship,43,77,27262,27,40,5,0,6,0,11
+2025,AUCMP,Australia Championship,43,77,25614,28,17,11,0,0,0,11
+2025,AUCMP,Australia Championship,43,77,26129,29,14,11,0,0,0,11
+2025,AUCMP,Australia Championship,43,77,27574,30,16,11,0,0,0,11
+2025,AUCMP,Australia Championship,43,77,30781,31,13,11,0,0,0,11
+2025,AUCMP,Australia Championship,43,77,15144,32,21,10,0,0,0,10
+2025,AUCMP,Australia Championship,43,77,15210,33,26,9,0,0,0,9
+2025,AUCMP,Australia Championship,43,77,26716,34,24,9,0,0,0,9
+2025,AUCMP,Australia Championship,43,77,11144,35,31,8,0,0,0,8
+2025,AUCMP,Australia Championship,43,77,24736,36,27,8,0,0,0,8
+2025,AUCMP,Australia Championship,43,77,11505,37,32,7,0,0,0,7
+2025,AUCMP,Australia Championship,43,77,18611,38,33,7,0,0,0,7
+2025,AUCMP,Australia Championship,43,77,31243,39,34,7,0,0,0,7
+2025,AUCMP,Australia Championship,43,77,18359,40,35,6,0,0,0,6
+2025,AUCMP,Australia Championship,43,77,23771,41,39,5,0,0,0,5
+2025,AUCMP,Australia Championship,43,77,33660,42,41,4,0,0,0,4
+2025,AUCMP,Australia Championship,43,77,24961,43,42,3,0,0,0,3
 2025,AUSYQ2,Sydney North Qualifier,28,53,23636,1,3,14,20,12,40,86
 2025,AUSYQ2,Sydney North Qualifier,28,53,18363,2,1,16,20,0,40,76
 2025,AUSYQ2,Sydney North Qualifier,28,53,10517,3,19,8,0,60,0,68
@@ -109,12 +151,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,AUWOQ,Wollongong Qualifier,14,24,18362,12,14,5,0,12,0,17
 2025,AUWOQ,Wollongong Qualifier,14,24,23875,13,9,9,0,0,0,9
 2025,AUWOQ,Wollongong Qualifier,14,24,24404,14,11,8,0,0,0,8
-2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,16055,1,2,13,19,60,20,112
-2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,17792,2,1,16,20,12,40,88
-2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,22708,3,3,11,20,12,40,83
-2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,17729,4,6,6,19,12,20,57
-2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,21083,5,4,9,0,0,0,9
-2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,30540,6,5,8,0,0,0,8
 2025,BRCAQ,Seletiva Catarinense FIRST Tech Challenge,12,24,19193,1,7,9,18,60,10,97
 2025,BRCAQ,Seletiva Catarinense FIRST Tech Challenge,12,24,24557,2,1,16,20,12,40,88
 2025,BRCAQ,Seletiva Catarinense FIRST Tech Challenge,12,24,23069,3,4,12,20,12,40,84
@@ -127,6 +163,28 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,BRCAQ,Seletiva Catarinense FIRST Tech Challenge,12,24,26484,10,12,5,0,12,0,17
 2025,BRCAQ,Seletiva Catarinense FIRST Tech Challenge,12,24,32795,11,9,8,0,0,0,8
 2025,BRCAQ,Seletiva Catarinense FIRST Tech Challenge,12,24,26969,12,10,7,0,0,0,7
+2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,16055,1,2,13,19,60,20,112
+2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,17792,2,1,16,20,12,40,88
+2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,22708,3,3,11,20,12,40,83
+2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,17729,4,6,6,19,12,20,57
+2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,21083,5,4,9,0,0,0,9
+2025,BRBHQ,Festival Sesi De Robotica - Regional Minas Gerais,6,12,30540,6,5,8,0,0,0,8
+2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,17801,1,5,9,20,60,40,129
+2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,17730,2,1,16,20,0,40,76
+2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,27391,3,2,13,19,12,20,64
+2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,26970,4,3,12,19,12,20,63
+2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,16056,5,7,7,0,12,0,19
+2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,27390,6,4,11,0,0,0,11
+2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,21086,7,6,8,0,0,0,8
+2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,23073,8,8,6,0,0,0,6
+2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,26956,1,1,16,20,60,20,116
+2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,16053,2,2,13,19,12,40,84
+2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,32577,3,5,9,19,0,40,68
+2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,32576,4,4,11,20,12,20,63
+2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,19192,5,3,12,0,12,0,24
+2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,32578,6,6,8,0,0,0,8
+2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,23072,7,7,7,0,0,0,7
+2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,23500,8,8,6,0,0,0,6
 2025,BRPAQ,Torneio Regional FIRST Tech Challenge - RS,9,17,14391,1,3,12,20,60,40,132
 2025,BRPAQ,Torneio Regional FIRST Tech Challenge - RS,9,17,16786,2,1,16,20,12,40,88
 2025,BRPAQ,Torneio Regional FIRST Tech Challenge - RS,9,17,21342,3,2,14,19,0,20,53
@@ -136,24 +194,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,BRPAQ,Torneio Regional FIRST Tech Challenge - RS,9,17,31200,7,6,9,0,0,0,9
 2025,BRPAQ,Torneio Regional FIRST Tech Challenge - RS,9,17,26059,8,8,7,0,0,0,7
 2025,BRPAQ,Torneio Regional FIRST Tech Challenge - RS,9,17,31258,9,9,5,0,0,0,5
-2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,17801,1,5,9,20,60,40,129
-2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,17730,2,1,16,20,0,40,76
-2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,27391,3,2,13,19,12,20,64
-2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,26970,4,3,12,19,12,20,63
-2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,16056,5,7,7,0,12,0,19
-2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,27390,6,4,11,0,0,0,11
-2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,21086,7,6,8,0,0,0,8
-2025,BRCGQ,Seletiva FIRST Tech Challenge SESI/MS,8,16,23073,8,8,6,0,0,0,6
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,26960,1,3,12,20,60,40,132
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,23055,2,1,16,20,12,40,88
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,27184,3,2,14,19,12,20,65
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,16052,4,9,7,19,0,20,46
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,31638,5,6,9,0,12,0,21
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,20858,6,4,11,0,0,0,11
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,31858,7,5,10,0,0,0,10
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,32510,8,7,9,0,0,0,9
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,31692,9,8,8,0,0,0,8
-2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,23061,10,10,5,0,0,0,5
 2025,BRPIQ,Festival Regional Sesi de Educação,26,50,21085,1,4,14,18,60,20,112
 2025,BRPIQ,Festival Regional Sesi de Educação,26,50,21222,2,9,11,17,15,40,83
 2025,BRPIQ,Festival Regional Sesi de Educação,26,50,32431,3,7,12,17,0,40,69
@@ -180,14 +220,18 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,BRPIQ,Festival Regional Sesi de Educação,26,50,31737,24,22,6,0,0,0,6
 2025,BRPIQ,Festival Regional Sesi de Educação,26,50,24555,25,25,5,0,0,0,5
 2025,BRPIQ,Festival Regional Sesi de Educação,26,50,30575,26,24,5,0,0,0,5
-2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,26956,1,1,16,20,60,20,116
-2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,16053,2,2,13,19,12,40,84
-2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,32577,3,5,9,19,0,40,68
-2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,32576,4,4,11,20,12,20,63
-2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,19192,5,3,12,0,12,0,24
-2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,32578,6,6,8,0,0,0,8
-2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,23072,7,7,7,0,0,0,7
-2025,BRFOQ,TORNEIO SESI DE ROBÓTICA - CEARÁ,8,13,23500,8,8,6,0,0,0,6
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,26960,1,3,12,20,60,40,132
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,23055,2,1,16,20,12,40,88
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,27184,3,2,14,19,12,20,65
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,16052,4,9,7,19,0,20,46
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,31638,5,6,9,0,12,0,21
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,20858,6,4,11,0,0,0,11
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,31858,7,5,10,0,0,0,10
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,32510,8,7,9,0,0,0,9
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,31692,9,8,8,0,0,0,8
+2025,BRRJQ,Torneio SESI de Robótica - Regional Rio de Janeiro powered by Equinor,10,18,23061,10,10,5,0,0,0,5
+2025,CABCSUQ,L.A. Matheson Qualifier,27,43,26908,1,1,16,20,60,40,136
+2025,CABCSUQ,L.A. Matheson Qualifier,27,43,16205,2,2,3,19,0,20,42
 2025,CANLCMP,Newfoundland and Labrador Championship,10,14,33490,1,4,11,19,60,20,110
 2025,CANLCMP,Newfoundland and Labrador Championship,10,14,32049,2,1,16,20,0,40,76
 2025,CANLCMP,Newfoundland and Labrador Championship,10,14,32293,3,3,12,20,0,40,72
@@ -219,38 +263,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,CAONKAQ,Ottawa Qualifier,24,40,27379,21,19,7,0,0,0,7
 2025,CAONKAQ,Ottawa Qualifier,24,40,24137,22,21,6,0,0,0,6
 2025,CAONKAQ,Ottawa Qualifier,24,40,32033,23,20,6,0,0,0,6
-2025,CAONSCQ,St. Catharines Qualifier,15,26,16424,1,5,12,17,60,10,99
-2025,CAONSCQ,St. Catharines Qualifier,15,26,18809,2,1,16,20,12,40,88
-2025,CAONSCQ,St. Catharines Qualifier,15,26,18433,3,3,13,19,30,20,82
-2025,CAONSCQ,St. Catharines Qualifier,15,26,30337,4,2,14,20,0,40,74
-2025,CAONSCQ,St. Catharines Qualifier,15,26,22035,5,9,9,19,12,20,60
-2025,CAONSCQ,St. Catharines Qualifier,15,26,27158,6,11,8,17,12,10,47
-2025,CAONSCQ,St. Catharines Qualifier,15,26,22075,7,4,12,18,12,5,47
-2025,CAONSCQ,St. Catharines Qualifier,15,26,27449,8,6,11,18,0,5,34
-2025,CAONSCQ,St. Catharines Qualifier,15,26,22034,9,8,10,0,12,0,22
-2025,CAONSCQ,St. Catharines Qualifier,15,26,25914,10,7,10,0,12,0,22
-2025,CAONSCQ,St. Catharines Qualifier,15,26,18808,11,12,7,0,12,0,19
-2025,CAONSCQ,St. Catharines Qualifier,15,26,27966,12,15,5,0,12,0,17
-2025,CAONSCQ,St. Catharines Qualifier,15,26,23880,13,10,9,0,0,0,9
-2025,CAONSCQ,St. Catharines Qualifier,15,26,32195,14,13,7,0,0,0,7
-2025,CAONSCQ,St. Catharines Qualifier,15,26,33416,15,14,6,0,0,0,6
-2025,CAONNYQ,North York Qualifier,17,28,22603,1,7,11,20,60,20,111
-2025,CAONNYQ,North York Qualifier,17,28,27076,2,3,14,18,12,40,84
-2025,CAONNYQ,North York Qualifier,17,28,32782,3,4,13,18,12,40,83
-2025,CAONNYQ,North York Qualifier,17,28,19447,4,5,12,17,30,10,69
-2025,CAONNYQ,North York Qualifier,17,28,24457,5,1,16,20,12,20,68
-2025,CAONNYQ,North York Qualifier,17,28,18844,6,9,10,19,12,5,46
-2025,CAONNYQ,North York Qualifier,17,28,19446,7,17,4,17,12,10,43
-2025,CAONNYQ,North York Qualifier,17,28,32550,8,2,15,19,0,5,39
-2025,CAONNYQ,North York Qualifier,17,28,33397,9,8,10,0,12,0,22
-2025,CAONNYQ,North York Qualifier,17,28,27315,10,10,9,0,12,0,21
-2025,CAONNYQ,North York Qualifier,17,28,19521,11,14,7,0,12,0,19
-2025,CAONNYQ,North York Qualifier,17,28,27316,12,6,11,0,0,0,11
-2025,CAONNYQ,North York Qualifier,17,28,28302,13,11,9,0,0,0,9
-2025,CAONNYQ,North York Qualifier,17,28,27294,14,13,8,0,0,0,8
-2025,CAONNYQ,North York Qualifier,17,28,27798,15,12,8,0,0,0,8
-2025,CAONNYQ,North York Qualifier,17,28,28068,16,15,6,0,0,0,6
-2025,CAONNYQ,North York Qualifier,17,28,28115,17,16,5,0,0,0,5
 2025,CAONMIQ,Mississauga Qualifier,26,44,22242,1,1,16,20,12,40,88
 2025,CAONMIQ,Mississauga Qualifier,26,44,19836,2,2,15,20,12,40,87
 2025,CAONMIQ,Mississauga Qualifier,26,44,16488,3,23,6,0,60,0,66
@@ -277,6 +289,23 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,CAONMIQ,Mississauga Qualifier,26,44,19487,24,25,5,0,0,0,5
 2025,CAONMIQ,Mississauga Qualifier,26,44,27445,25,24,5,0,0,0,5
 2025,CAONMIQ,Mississauga Qualifier,26,44,19468,26,26,4,0,0,0,4
+2025,CAONNYQ,North York Qualifier,17,28,22603,1,7,11,20,60,20,111
+2025,CAONNYQ,North York Qualifier,17,28,27076,2,3,14,18,12,40,84
+2025,CAONNYQ,North York Qualifier,17,28,32782,3,4,13,18,12,40,83
+2025,CAONNYQ,North York Qualifier,17,28,19447,4,5,12,17,30,10,69
+2025,CAONNYQ,North York Qualifier,17,28,24457,5,1,16,20,12,20,68
+2025,CAONNYQ,North York Qualifier,17,28,18844,6,9,10,19,12,5,46
+2025,CAONNYQ,North York Qualifier,17,28,19446,7,17,4,17,12,10,43
+2025,CAONNYQ,North York Qualifier,17,28,32550,8,2,15,19,0,5,39
+2025,CAONNYQ,North York Qualifier,17,28,33397,9,8,10,0,12,0,22
+2025,CAONNYQ,North York Qualifier,17,28,27315,10,10,9,0,12,0,21
+2025,CAONNYQ,North York Qualifier,17,28,19521,11,14,7,0,12,0,19
+2025,CAONNYQ,North York Qualifier,17,28,27316,12,6,11,0,0,0,11
+2025,CAONNYQ,North York Qualifier,17,28,28302,13,11,9,0,0,0,9
+2025,CAONNYQ,North York Qualifier,17,28,27294,14,13,8,0,0,0,8
+2025,CAONNYQ,North York Qualifier,17,28,27798,15,12,8,0,0,0,8
+2025,CAONNYQ,North York Qualifier,17,28,28068,16,15,6,0,0,0,6
+2025,CAONNYQ,North York Qualifier,17,28,28115,17,16,5,0,0,0,5
 2025,CAONSUQ,Sudbury Qualifier,10,17,20105,1,4,11,19,60,20,110
 2025,CAONSUQ,Sudbury Qualifier,10,17,22309,2,1,16,20,12,40,88
 2025,CAONSUQ,Sudbury Qualifier,10,17,30420,3,2,14,20,0,40,74
@@ -286,6 +315,21 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,CAONSUQ,Sudbury Qualifier,10,17,30441,7,7,8,0,12,0,20
 2025,CAONSUQ,Sudbury Qualifier,10,17,32674,8,8,7,0,0,0,7
 2025,CAONSUQ,Sudbury Qualifier,10,17,22775,9,9,5,0,0,0,5
+2025,CAONSCQ,St. Catharines Qualifier,15,26,16424,1,5,12,17,60,10,99
+2025,CAONSCQ,St. Catharines Qualifier,15,26,18809,2,1,16,20,12,40,88
+2025,CAONSCQ,St. Catharines Qualifier,15,26,18433,3,3,13,19,30,20,82
+2025,CAONSCQ,St. Catharines Qualifier,15,26,30337,4,2,14,20,0,40,74
+2025,CAONSCQ,St. Catharines Qualifier,15,26,22035,5,9,9,19,12,20,60
+2025,CAONSCQ,St. Catharines Qualifier,15,26,27158,6,11,8,17,12,10,47
+2025,CAONSCQ,St. Catharines Qualifier,15,26,22075,7,4,12,18,12,5,47
+2025,CAONSCQ,St. Catharines Qualifier,15,26,27449,8,6,11,18,0,5,34
+2025,CAONSCQ,St. Catharines Qualifier,15,26,22034,9,8,10,0,12,0,22
+2025,CAONSCQ,St. Catharines Qualifier,15,26,25914,10,7,10,0,12,0,22
+2025,CAONSCQ,St. Catharines Qualifier,15,26,18808,11,12,7,0,12,0,19
+2025,CAONSCQ,St. Catharines Qualifier,15,26,27966,12,15,5,0,12,0,17
+2025,CAONSCQ,St. Catharines Qualifier,15,26,23880,13,10,9,0,0,0,9
+2025,CAONSCQ,St. Catharines Qualifier,15,26,32195,14,13,7,0,0,0,7
+2025,CAONSCQ,St. Catharines Qualifier,15,26,33416,15,14,6,0,0,0,6
 2025,CAONTOQ1,Central Scarborough Qualifier,17,32,18846,1,3,14,20,60,40,134
 2025,CAONTOQ1,Central Scarborough Qualifier,17,32,25049,2,1,16,20,12,40,88
 2025,CAONTOQ1,Central Scarborough Qualifier,17,32,20261,3,2,15,19,30,20,84
@@ -385,45 +429,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,CNCHQ,China FTC Chongqing Qualifier,33,60,31971,31,29,6,0,0,0,6
 2025,CNCHQ,China FTC Chongqing Qualifier,33,60,19913,32,30,5,0,0,0,5
 2025,CNCHQ,China FTC Chongqing Qualifier,33,60,28042,33,31,5,0,0,0,5
-2025,KZASQ1,Astana Regional,26,49,21094,1,8,12,19,60,40,131
-2025,KZASQ1,Astana Regional,26,49,28300,2,3,14,19,15,40,88
-2025,KZASQ1,Astana Regional,26,49,29029,3,2,15,20,30,20,85
-2025,KZASQ1,Astana Regional,26,49,28061,4,1,16,20,12,20,68
-2025,KZASQ1,Astana Regional,26,49,31881,5,6,13,16,12,10,51
-2025,KZASQ1,Astana Regional,26,49,30326,6,14,9,16,12,10,47
-2025,KZASQ1,Astana Regional,26,49,24748,7,5,13,17,6,5,41
-2025,KZASQ1,Astana Regional,26,49,22975,8,11,11,15,12,0,38
-2025,KZASQ1,Astana Regional,26,49,25556,9,4,14,18,6,0,38
-2025,KZASQ1,Astana Regional,26,49,21062,10,19,8,17,6,5,36
-2025,KZASQ1,Astana Regional,26,49,32728,11,7,12,15,6,0,33
-2025,KZASQ1,Astana Regional,26,49,24783,12,10,11,0,12,0,23
-2025,KZASQ1,Astana Regional,26,49,26602,13,13,10,0,12,0,22
-2025,KZASQ1,Astana Regional,26,49,33444,14,26,4,18,0,0,22
-2025,KZASQ1,Astana Regional,26,49,25193,15,23,6,0,12,0,18
-2025,KZASQ1,Astana Regional,26,49,29394,16,24,5,0,12,0,17
-2025,KZASQ1,Astana Regional,26,49,24881,17,16,9,0,6,0,15
-2025,KZASQ1,Astana Regional,26,49,25547,18,15,9,0,6,0,15
-2025,KZASQ1,Astana Regional,26,49,29393,19,9,11,0,3,0,14
-2025,KZASQ1,Astana Regional,26,49,25109,20,21,7,0,6,0,13
-2025,KZASQ1,Astana Regional,26,49,28659,21,25,5,0,6,0,11
-2025,KZASQ1,Astana Regional,26,49,32685,22,12,10,0,0,0,10
-2025,KZASQ1,Astana Regional,26,49,21059,23,18,8,0,0,0,8
-2025,KZASQ1,Astana Regional,26,49,33565,24,17,8,0,0,0,8
-2025,KZASQ1,Astana Regional,26,49,28888,25,20,7,0,0,0,7
-2025,KZASQ1,Astana Regional,26,49,33595,26,22,6,0,0,0,6
-2025,KZSEQ,Abay FIRST Regional,13,24,19163,1,3,13,20,60,40,133
-2025,KZSEQ,Abay FIRST Regional,13,24,33339,2,2,14,19,30,20,83
-2025,KZSEQ,Abay FIRST Regional,13,24,27674,3,1,16,20,0,40,76
-2025,KZSEQ,Abay FIRST Regional,13,24,29112,4,4,12,19,12,20,63
-2025,KZSEQ,Abay FIRST Regional,13,24,25556,5,6,11,18,12,10,51
-2025,KZSEQ,Abay FIRST Regional,13,24,28745,6,5,11,18,12,10,51
-2025,KZSEQ,Abay FIRST Regional,13,24,32728,7,7,10,17,12,5,44
-2025,KZSEQ,Abay FIRST Regional,13,24,23002,8,8,9,17,12,5,43
-2025,KZSEQ,Abay FIRST Regional,13,24,26166,9,9,8,0,12,0,20
-2025,KZSEQ,Abay FIRST Regional,13,24,32685,10,11,7,0,12,0,19
-2025,KZSEQ,Abay FIRST Regional,13,24,33423,11,12,6,0,12,0,18
-2025,KZSEQ,Abay FIRST Regional,13,24,33617,12,10,8,0,6,0,14
-2025,KZSEQ,Abay FIRST Regional,13,24,25294,13,13,5,0,3,0,8
 2025,KZALQ1,Almaty FIRST Regional,37,58,27674,1,1,16,20,30,40,106
 2025,KZALQ1,Almaty FIRST Regional,37,58,24697,2,19,10,18,60,10,98
 2025,KZALQ1,Almaty FIRST Regional,37,58,32284,3,17,10,20,12,40,82
@@ -461,6 +466,32 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,KZALQ1,Almaty FIRST Regional,37,58,25272,35,35,5,0,0,0,5
 2025,KZALQ1,Almaty FIRST Regional,37,58,33423,36,36,4,0,0,0,4
 2025,KZALQ1,Almaty FIRST Regional,37,58,33855,37,37,4,0,0,0,4
+2025,KZASQ1,Astana Regional,26,49,21094,1,8,12,19,60,40,131
+2025,KZASQ1,Astana Regional,26,49,28300,2,3,14,19,15,40,88
+2025,KZASQ1,Astana Regional,26,49,29029,3,2,15,20,30,20,85
+2025,KZASQ1,Astana Regional,26,49,28061,4,1,16,20,12,20,68
+2025,KZASQ1,Astana Regional,26,49,31881,5,6,13,16,12,10,51
+2025,KZASQ1,Astana Regional,26,49,30326,6,14,9,16,12,10,47
+2025,KZASQ1,Astana Regional,26,49,24748,7,5,13,17,6,5,41
+2025,KZASQ1,Astana Regional,26,49,22975,8,11,11,15,12,0,38
+2025,KZASQ1,Astana Regional,26,49,25556,9,4,14,18,6,0,38
+2025,KZASQ1,Astana Regional,26,49,21062,10,19,8,17,6,5,36
+2025,KZASQ1,Astana Regional,26,49,32728,11,7,12,15,6,0,33
+2025,KZASQ1,Astana Regional,26,49,24783,12,10,11,0,12,0,23
+2025,KZASQ1,Astana Regional,26,49,26602,13,13,10,0,12,0,22
+2025,KZASQ1,Astana Regional,26,49,33444,14,26,4,18,0,0,22
+2025,KZASQ1,Astana Regional,26,49,25193,15,23,6,0,12,0,18
+2025,KZASQ1,Astana Regional,26,49,29394,16,24,5,0,12,0,17
+2025,KZASQ1,Astana Regional,26,49,24881,17,16,9,0,6,0,15
+2025,KZASQ1,Astana Regional,26,49,25547,18,15,9,0,6,0,15
+2025,KZASQ1,Astana Regional,26,49,29393,19,9,11,0,3,0,14
+2025,KZASQ1,Astana Regional,26,49,25109,20,21,7,0,6,0,13
+2025,KZASQ1,Astana Regional,26,49,28659,21,25,5,0,6,0,11
+2025,KZASQ1,Astana Regional,26,49,32685,22,12,10,0,0,0,10
+2025,KZASQ1,Astana Regional,26,49,21059,23,18,8,0,0,0,8
+2025,KZASQ1,Astana Regional,26,49,33565,24,17,8,0,0,0,8
+2025,KZASQ1,Astana Regional,26,49,28888,25,20,7,0,0,0,7
+2025,KZASQ1,Astana Regional,26,49,33595,26,22,6,0,0,0,6
 2025,KZBUQ,Burabay FIRST Regional,21,42,27777,1,5,13,19,60,20,112
 2025,KZBUQ,Burabay FIRST Regional,21,42,28061,2,1,16,20,15,40,91
 2025,KZBUQ,Burabay FIRST Regional,21,42,29029,3,3,14,20,12,40,86
@@ -482,6 +513,19 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,KZBUQ,Burabay FIRST Regional,21,42,25109,19,19,6,0,0,0,6
 2025,KZBUQ,Burabay FIRST Regional,21,42,33595,20,20,5,0,0,0,5
 2025,KZBUQ,Burabay FIRST Regional,21,42,28473,21,21,4,0,0,0,4
+2025,KZSEQ,Abay FIRST Regional,13,24,19163,1,3,13,20,60,40,133
+2025,KZSEQ,Abay FIRST Regional,13,24,33339,2,2,14,19,30,20,83
+2025,KZSEQ,Abay FIRST Regional,13,24,27674,3,1,16,20,0,40,76
+2025,KZSEQ,Abay FIRST Regional,13,24,29112,4,4,12,19,12,20,63
+2025,KZSEQ,Abay FIRST Regional,13,24,25556,5,6,11,18,12,10,51
+2025,KZSEQ,Abay FIRST Regional,13,24,28745,6,5,11,18,12,10,51
+2025,KZSEQ,Abay FIRST Regional,13,24,32728,7,7,10,17,12,5,44
+2025,KZSEQ,Abay FIRST Regional,13,24,23002,8,8,9,17,12,5,43
+2025,KZSEQ,Abay FIRST Regional,13,24,26166,9,9,8,0,12,0,20
+2025,KZSEQ,Abay FIRST Regional,13,24,32685,10,11,7,0,12,0,19
+2025,KZSEQ,Abay FIRST Regional,13,24,33423,11,12,6,0,12,0,18
+2025,KZSEQ,Abay FIRST Regional,13,24,33617,12,10,8,0,6,0,14
+2025,KZSEQ,Abay FIRST Regional,13,24,25294,13,13,5,0,3,0,8
 2025,MXCAQ,Torneo Regional FTC Cancún,5,11,15912,1,1,16,20,60,20,116
 2025,MXCAQ,Torneo Regional FTC Cancún,5,11,26961,2,4,9,19,12,40,80
 2025,MXCAQ,Torneo Regional FTC Cancún,5,11,22571,3,3,10,19,0,40,69
@@ -507,18 +551,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,MXCIQ,Torneo Regional Cuautitlán,20,31,31545,18,15,8,0,0,0,8
 2025,MXCIQ,Torneo Regional Cuautitlán,20,31,20327,19,17,7,0,0,0,7
 2025,MXCIQ,Torneo Regional Cuautitlán,20,31,31609,20,19,5,0,0,0,5
-2025,NLHAQ,Qualifier Hasselt,12,25,23417,1,3,13,20,60,20,113
-2025,NLHAQ,Qualifier Hasselt,12,25,24090,2,1,16,20,30,20,86
-2025,NLHAQ,Qualifier Hasselt,12,25,12475,3,2,14,19,12,40,85
-2025,NLHAQ,Qualifier Hasselt,12,25,19444,4,4,12,19,12,40,83
-2025,NLHAQ,Qualifier Hasselt,12,25,16382,5,6,10,17,12,10,49
-2025,NLHAQ,Qualifier Hasselt,12,25,12463,6,5,11,18,12,5,46
-2025,NLHAQ,Qualifier Hasselt,12,25,16402,7,9,8,18,12,5,43
-2025,NLHAQ,Qualifier Hasselt,12,25,16476,8,8,9,17,0,10,36
-2025,NLHAQ,Qualifier Hasselt,12,25,14183,9,7,9,0,12,0,21
-2025,NLHAQ,Qualifier Hasselt,12,25,11041,10,12,5,0,12,0,17
-2025,NLHAQ,Qualifier Hasselt,12,25,23390,11,10,7,0,0,0,7
-2025,NLHAQ,Qualifier Hasselt,12,25,24003,12,11,6,0,0,0,6
 2025,MXTLQ,Torneo Regional CDMX,28,53,17627,1,1,16,20,12,40,88
 2025,MXTLQ,Torneo Regional CDMX,28,53,6584,2,2,15,20,12,40,87
 2025,MXTLQ,Torneo Regional CDMX,28,53,17626,3,12,10,0,60,0,70
@@ -547,6 +579,30 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,MXTLQ,Torneo Regional CDMX,28,53,23651,26,25,6,0,0,0,6
 2025,MXTLQ,Torneo Regional CDMX,28,53,25859,27,24,6,0,0,0,6
 2025,MXTLQ,Torneo Regional CDMX,28,53,32183,28,28,4,0,0,0,4
+2025,NLTHQ,Qualifier The Hague,13,24,23014,1,4,12,20,60,40,132
+2025,NLTHQ,Qualifier The Hague,13,24,20092,2,1,16,20,30,40,106
+2025,NLTHQ,Qualifier The Hague,13,24,13953,3,2,14,19,12,20,65
+2025,NLTHQ,Qualifier The Hague,13,24,3977,4,5,11,19,12,20,62
+2025,NLTHQ,Qualifier The Hague,13,24,3954,5,6,10,18,12,10,50
+2025,NLTHQ,Qualifier The Hague,13,24,17258,6,7,9,17,12,5,43
+2025,NLTHQ,Qualifier The Hague,13,24,10183,7,9,8,17,12,5,42
+2025,NLTHQ,Qualifier The Hague,13,24,32200,8,3,13,18,0,10,41
+2025,NLTHQ,Qualifier The Hague,13,24,23052,9,10,7,0,12,0,19
+2025,NLTHQ,Qualifier The Hague,13,24,25905,10,12,5,0,12,0,17
+2025,NLTHQ,Qualifier The Hague,13,24,33535,11,8,9,0,0,0,9
+2025,NLTHQ,Qualifier The Hague,13,24,27706,12,11,6,0,0,0,6
+2025,NLHAQ,Qualifier Hasselt,12,25,23417,1,3,13,20,60,20,113
+2025,NLHAQ,Qualifier Hasselt,12,25,24090,2,1,16,20,30,20,86
+2025,NLHAQ,Qualifier Hasselt,12,25,12475,3,2,14,19,12,40,85
+2025,NLHAQ,Qualifier Hasselt,12,25,19444,4,4,12,19,12,40,83
+2025,NLHAQ,Qualifier Hasselt,12,25,16382,5,6,10,17,12,10,49
+2025,NLHAQ,Qualifier Hasselt,12,25,12463,6,5,11,18,12,5,46
+2025,NLHAQ,Qualifier Hasselt,12,25,16402,7,9,8,18,12,5,43
+2025,NLHAQ,Qualifier Hasselt,12,25,16476,8,8,9,17,0,10,36
+2025,NLHAQ,Qualifier Hasselt,12,25,14183,9,7,9,0,12,0,21
+2025,NLHAQ,Qualifier Hasselt,12,25,11041,10,12,5,0,12,0,17
+2025,NLHAQ,Qualifier Hasselt,12,25,23390,11,10,7,0,0,0,7
+2025,NLHAQ,Qualifier Hasselt,12,25,24003,12,11,6,0,0,0,6
 2025,TRTUQ1,1. Piri Reis Turnuvası,16,26,24230,1,13,7,17,30,40,94
 2025,TRTUQ1,1. Piri Reis Turnuvası,16,26,25039,2,6,11,17,12,40,80
 2025,TRTUQ1,1. Piri Reis Turnuvası,16,26,25153,3,12,8,0,60,0,68
@@ -625,6 +681,16 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,TRTUQ4,4. Piri Reis Turnuvası,22,38,25572,20,18,7,0,0,0,7
 2025,TRTUQ4,4. Piri Reis Turnuvası,22,38,32222,21,20,6,0,0,0,6
 2025,TRTUQ4,4. Piri Reis Turnuvası,22,38,25156,22,22,4,0,0,0,4
+2025,USALHUQ1,Qualifier #1,11,17,25751,1,6,9,20,60,40,129
+2025,USALHUQ1,Qualifier #1,11,17,24331,2,1,16,20,12,40,88
+2025,USALHUQ1,Qualifier #1,11,17,26154,3,2,14,19,30,20,83
+2025,USALHUQ1,Qualifier #1,11,17,25114,4,3,12,19,12,20,63
+2025,USALHUQ1,Qualifier #1,11,17,7842,5,4,11,0,12,0,23
+2025,USALHUQ1,Qualifier #1,11,17,32355,6,5,10,0,12,0,22
+2025,USALHUQ1,Qualifier #1,11,17,24378,7,7,9,0,12,0,21
+2025,USALHUQ1,Qualifier #1,11,17,26030,8,8,8,0,12,0,20
+2025,USALHUQ1,Qualifier #1,11,17,24332,9,9,7,0,12,0,19
+2025,USALHUQ1,Qualifier #1,11,17,19459,10,10,5,0,12,0,17
 2025,USALHUQ2,Qualifier #2,13,23,24180,1,2,14,19,60,40,133
 2025,USALHUQ2,Qualifier #2,13,23,20979,2,4,12,19,0,40,71
 2025,USALHUQ2,Qualifier #2,13,23,23418,3,1,16,20,12,20,68
@@ -638,35 +704,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USALHUQ2,Qualifier #2,13,23,24148,11,12,6,0,12,0,18
 2025,USALHUQ2,Qualifier #2,13,23,11542,12,13,5,0,12,0,17
 2025,USALHUQ2,Qualifier #2,13,23,25911,13,10,8,0,0,0,8
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,10523,1,7,11,19,60,20,110
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,15909,2,1,16,20,12,40,88
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,12887,3,4,13,20,12,40,85
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,15461,4,2,15,19,30,20,84
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,17614,5,3,14,18,12,10,54
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,24431,6,5,12,18,12,10,52
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,15058,7,6,12,17,12,5,46
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,30469,8,11,9,17,12,5,43
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,21579,9,9,10,0,12,0,22
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,12889,10,15,7,0,12,0,19
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,14624,11,8,11,0,0,0,11
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,26198,12,10,10,0,0,0,10
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,27569,13,12,9,0,0,0,9
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,24666,14,14,8,0,0,0,8
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,27567,15,13,8,0,0,0,8
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,15477,16,16,7,0,0,0,7
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,27568,17,17,6,0,0,0,6
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,30471,18,18,5,0,0,0,5
-2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,20775,19,19,4,0,0,0,4
-2025,USALHUQ1,Qualifier #1,11,17,25751,1,6,9,20,60,40,129
-2025,USALHUQ1,Qualifier #1,11,17,24331,2,1,16,20,12,40,88
-2025,USALHUQ1,Qualifier #1,11,17,26154,3,2,14,19,30,20,83
-2025,USALHUQ1,Qualifier #1,11,17,25114,4,3,12,19,12,20,63
-2025,USALHUQ1,Qualifier #1,11,17,7842,5,4,11,0,12,0,23
-2025,USALHUQ1,Qualifier #1,11,17,32355,6,5,10,0,12,0,22
-2025,USALHUQ1,Qualifier #1,11,17,24378,7,7,9,0,12,0,21
-2025,USALHUQ1,Qualifier #1,11,17,26030,8,8,8,0,12,0,20
-2025,USALHUQ1,Qualifier #1,11,17,24332,9,9,7,0,12,0,19
-2025,USALHUQ1,Qualifier #1,11,17,19459,10,10,5,0,12,0,17
 2025,USAZFLQ,High Country - Flagstaff Qualifier,25,42,8081,1,11,10,18,60,5,93
 2025,USAZFLQ,High Country - Flagstaff Qualifier,25,42,26100,2,1,16,20,12,40,88
 2025,USAZFLQ,High Country - Flagstaff Qualifier,25,42,18291,3,2,15,20,12,40,87
@@ -692,6 +729,25 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USAZFLQ,High Country - Flagstaff Qualifier,25,42,201,23,20,7,0,0,0,7
 2025,USAZFLQ,High Country - Flagstaff Qualifier,25,42,26002,24,23,5,0,0,0,5
 2025,USAZFLQ,High Country - Flagstaff Qualifier,25,42,23950,25,25,4,0,0,0,4
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,10523,1,7,11,19,60,20,110
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,15909,2,1,16,20,12,40,88
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,12887,3,4,13,20,12,40,85
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,15461,4,2,15,19,30,20,84
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,17614,5,3,14,18,12,10,54
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,24431,6,5,12,18,12,10,52
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,15058,7,6,12,17,12,5,46
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,30469,8,11,9,17,12,5,43
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,21579,9,9,10,0,12,0,22
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,12889,10,15,7,0,12,0,19
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,14624,11,8,11,0,0,0,11
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,26198,12,10,10,0,0,0,10
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,27569,13,12,9,0,0,0,9
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,24666,14,14,8,0,0,0,8
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,27567,15,13,8,0,0,0,8
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,15477,16,16,7,0,0,0,7
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,27568,17,17,6,0,0,0,6
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,30471,18,18,5,0,0,0,5
+2025,USAZCHQ1,Red Rock - Microchip Qualifier #1,20,31,20775,19,19,4,0,0,0,4
 2025,USAZGIQ,Roadrunner - Gilbert Qualifier,21,37,10111,1,5,13,20,15,40,88
 2025,USAZGIQ,Roadrunner - Gilbert Qualifier,21,37,26128,2,1,16,20,12,40,88
 2025,USAZGIQ,Roadrunner - Gilbert Qualifier,21,37,14254,3,10,10,16,60,0,86
@@ -748,6 +804,18 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USAZPHQ3,Painted Desert - Phoenix Qualifier,18,29,9743,16,16,6,0,0,0,6
 2025,USAZPHQ3,Painted Desert - Phoenix Qualifier,18,29,26198,17,17,5,0,0,0,5
 2025,USAZPHQ3,Painted Desert - Phoenix Qualifier,18,29,27567,18,18,4,0,0,0,4
+2025,USCANOSJQ3,The Play Space QT #2,13,22,23222,1,1,16,20,12,40,88
+2025,USCANOSJQ3,The Play Space QT #2,13,22,27621,2,2,14,20,12,40,86
+2025,USCANOSJQ3,The Play Space QT #2,13,22,14525,3,3,13,19,30,20,82
+2025,USCANOSJQ3,The Play Space QT #2,13,22,20163,4,10,7,0,60,0,67
+2025,USCANOSJQ3,The Play Space QT #2,13,22,23393,5,4,12,19,12,20,63
+2025,USCANOSJQ3,The Play Space QT #2,13,22,30467,6,7,9,17,12,10,48
+2025,USCANOSJQ3,The Play Space QT #2,13,22,25725,7,5,11,18,12,5,46
+2025,USCANOSJQ3,The Play Space QT #2,13,22,25690,8,6,10,18,12,5,45
+2025,USCANOSJQ3,The Play Space QT #2,13,22,28118,9,8,9,17,0,10,36
+2025,USCANOSJQ3,The Play Space QT #2,13,22,13216,10,11,6,0,12,0,18
+2025,USCANOSJQ3,The Play Space QT #2,13,22,13356,11,9,8,0,0,0,8
+2025,USCANOSJQ3,The Play Space QT #2,13,22,13274,12,12,5,0,0,0,5
 2025,USCANOSJQ1,San Jose QT #1,16,24,23393,1,2,14,20,30,40,104
 2025,USCANOSJQ1,San Jose QT #1,16,24,5773,2,4,12,18,60,10,100
 2025,USCANOSJQ1,San Jose QT #1,16,24,26713,3,1,16,20,12,40,88
@@ -762,18 +830,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USCANOSJQ1,San Jose QT #1,16,24,31785,12,9,9,0,0,0,9
 2025,USCANOSJQ1,San Jose QT #1,16,24,26890,13,11,8,0,0,0,8
 2025,USCANOSJQ1,San Jose QT #1,16,24,23586,14,14,5,0,0,0,5
-2025,USCANOSJQ3,The Play Space QT #2,13,22,23222,1,1,16,20,12,40,88
-2025,USCANOSJQ3,The Play Space QT #2,13,22,27621,2,2,14,20,12,40,86
-2025,USCANOSJQ3,The Play Space QT #2,13,22,14525,3,3,13,19,30,20,82
-2025,USCANOSJQ3,The Play Space QT #2,13,22,20163,4,10,7,0,60,0,67
-2025,USCANOSJQ3,The Play Space QT #2,13,22,23393,5,4,12,19,12,20,63
-2025,USCANOSJQ3,The Play Space QT #2,13,22,30467,6,7,9,17,12,10,48
-2025,USCANOSJQ3,The Play Space QT #2,13,22,25725,7,5,11,18,12,5,46
-2025,USCANOSJQ3,The Play Space QT #2,13,22,25690,8,6,10,18,12,5,45
-2025,USCANOSJQ3,The Play Space QT #2,13,22,28118,9,8,9,17,0,10,36
-2025,USCANOSJQ3,The Play Space QT #2,13,22,13216,10,11,6,0,12,0,18
-2025,USCANOSJQ3,The Play Space QT #2,13,22,13356,11,9,8,0,0,0,8
-2025,USCANOSJQ3,The Play Space QT #2,13,22,13274,12,12,5,0,0,0,5
 2025,USCANOSJQ4,The Play Space QT #3,15,26,22297,1,1,16,20,60,40,136
 2025,USCANOSJQ4,The Play Space QT #3,15,26,8404,2,2,14,20,12,40,86
 2025,USCANOSJQ4,The Play Space QT #3,15,26,23224,3,3,13,19,30,20,82
@@ -789,6 +845,27 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USCANOSJQ4,The Play Space QT #3,15,26,7303,13,13,7,0,0,0,7
 2025,USCANOSJQ4,The Play Space QT #3,15,26,25610,14,14,6,0,0,0,6
 2025,USCANOSJQ4,The Play Space QT #3,15,26,32130,15,15,5,0,0,0,5
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,26073,1,3,14,20,60,40,134
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,12096,2,1,16,20,12,40,88
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,24219,3,2,15,19,30,20,84
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,27377,4,4,13,19,15,20,67
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,30623,5,6,12,17,12,10,51
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,27075,6,11,10,18,12,5,45
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,25189,7,5,13,18,6,5,42
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,20675,8,10,10,17,0,10,37
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,26079,9,14,8,16,6,0,30
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,27475,10,7,11,16,0,0,27
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,16774,11,8,11,15,0,0,26
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,17548,12,13,9,15,0,0,24
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,14597,13,9,11,0,12,0,23
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,21358,14,12,9,0,12,0,21
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,4924,15,18,6,0,12,0,18
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,20447,16,19,6,0,12,0,18
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,8094,17,20,5,0,12,0,17
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,20714,18,15,8,0,6,0,14
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,22682,19,16,8,0,0,0,8
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,20241,20,17,7,0,0,0,7
+2025,USCHSROQ,"Roanoke, VA Qualifier",24,37,12655,21,21,4,0,0,0,4
 2025,USCANOSJQ5,The Play Space #6,15,24,6165,1,3,13,20,60,40,133
 2025,USCANOSJQ5,The Play Space #6,15,24,23346,2,1,16,20,12,40,88
 2025,USCANOSJQ5,The Play Space #6,15,24,19819,3,4,12,18,30,20,80
@@ -803,6 +880,30 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USCANOSJQ5,The Play Space #6,15,24,25131,12,12,7,0,0,0,7
 2025,USCANOSJQ5,The Play Space #6,15,24,31579,13,13,6,0,0,0,6
 2025,USCANOSJQ5,The Play Space #6,15,24,31902,14,14,5,0,0,0,5
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,13353,1,3,14,19,60,40,133
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,13270,2,6,12,19,30,40,101
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,26394,3,7,12,18,12,20,62
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,25657,4,2,15,20,12,10,57
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,27164,5,4,13,18,0,20,51
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,18697,6,1,16,20,0,10,46
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,8535,7,5,13,17,15,0,45
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,27025,8,8,11,17,12,0,40
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,22200,9,9,11,16,0,5,32
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,32035,10,10,11,16,0,5,32
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,7631,11,11,10,15,0,0,25
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,13599,12,12,10,15,0,0,25
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,519,13,13,9,0,12,0,21
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,26886,14,19,7,0,12,0,19
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,5014,15,21,6,0,12,0,18
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,14607,16,23,5,0,12,0,17
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,12718,17,14,9,0,0,0,9
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,31945,18,15,9,0,0,0,9
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,14315,19,17,8,0,0,0,8
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,24128,20,16,8,0,0,0,8
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,26650,21,18,8,0,0,0,8
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,31035,22,20,7,0,0,0,7
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,4451,23,22,6,0,0,0,6
+2025,USCHSWDQ2,Washington DC Qualifier II,25,40,32367,24,24,4,0,0,0,4
 2025,USCHSWDQ1,Washington DC Qualifier I,24,40,18442,1,1,16,20,60,40,136
 2025,USCHSWDQ1,Washington DC Qualifier I,24,40,19458,2,2,15,20,30,40,105
 2025,USCHSWDQ1,Washington DC Qualifier I,24,40,11112,3,3,14,19,12,20,65
@@ -843,34 +944,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USFCTSHQ,Rock with Wings - Shiprock Qualifier,18,27,23948,14,13,7,0,0,0,7
 2025,USFCTSHQ,Rock with Wings - Shiprock Qualifier,18,27,26006,15,14,6,0,0,0,6
 2025,USFCTSHQ,Rock with Wings - Shiprock Qualifier,18,27,26010,16,16,4,0,0,0,4
-2025,USINWEQ,Westfield QT,30,45,11329,1,1,16,20,60,40,136
-2025,USINWEQ,Westfield QT,30,45,22331,2,2,15,20,12,40,87
-2025,USINWEQ,Westfield QT,30,45,14954,3,5,13,18,30,20,81
-2025,USINWEQ,Westfield QT,30,45,14596,4,4,14,18,12,20,64
-2025,USINWEQ,Westfield QT,30,45,13414,5,8,12,16,12,5,45
-2025,USINWEQ,Westfield QT,30,45,12014,6,18,9,19,15,0,43
-2025,USINWEQ,Westfield QT,30,45,8149,7,6,13,17,12,0,42
-2025,USINWEQ,Westfield QT,30,45,8793,8,9,11,15,6,10,42
-2025,USINWEQ,Westfield QT,30,45,4366,9,3,14,19,6,0,39
-2025,USINWEQ,Westfield QT,30,45,8578,10,21,8,17,12,0,37
-2025,USINWEQ,Westfield QT,30,45,30458,11,10,11,15,0,10,36
-2025,USINWEQ,Westfield QT,30,45,31732,12,7,12,16,0,5,33
-2025,USINWEQ,Westfield QT,30,45,25680,13,15,9,0,12,0,21
-2025,USINWEQ,Westfield QT,30,45,21931,14,24,6,0,12,0,18
-2025,USINWEQ,Westfield QT,30,45,11959,15,14,10,0,6,0,16
-2025,USINWEQ,Westfield QT,30,45,22069,16,19,8,0,6,0,14
-2025,USINWEQ,Westfield QT,30,45,8791,17,23,7,0,6,0,13
-2025,USINWEQ,Westfield QT,30,45,24202,18,25,6,0,6,0,12
-2025,USINWEQ,Westfield QT,30,45,13295,19,11,11,0,0,0,11
-2025,USINWEQ,Westfield QT,30,45,22067,20,28,4,0,6,0,10
-2025,USINWEQ,Westfield QT,30,45,26660,21,12,10,0,0,0,10
-2025,USINWEQ,Westfield QT,30,45,30350,22,13,10,0,0,0,10
-2025,USINWEQ,Westfield QT,30,45,19932,23,16,9,0,0,0,9
-2025,USINWEQ,Westfield QT,30,45,24549,24,17,9,0,0,0,9
-2025,USINWEQ,Westfield QT,30,45,6518,25,20,8,0,0,0,8
-2025,USINWEQ,Westfield QT,30,45,26448,26,22,7,0,0,0,7
-2025,USINWEQ,Westfield QT,30,45,13246,27,26,5,0,0,0,5
-2025,USINWEQ,Westfield QT,30,45,32536,28,27,5,0,0,0,5
 2025,USMIAAQ,Ann Arbor Qualifier,34,53,12862,1,2,15,19,60,20,114
 2025,USMIAAQ,Ann Arbor Qualifier,34,53,8533,2,1,16,20,12,40,88
 2025,USMIAAQ,Ann Arbor Qualifier,34,53,26425,3,16,10,20,6,40,76
@@ -905,6 +978,46 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMIAAQ,Ann Arbor Qualifier,34,53,25906,32,32,5,0,0,0,5
 2025,USMIAAQ,Ann Arbor Qualifier,34,53,23858,33,34,4,0,0,0,4
 2025,USMIAAQ,Ann Arbor Qualifier,34,53,27169,34,33,4,0,0,0,4
+2025,USINWEQ,Westfield QT,30,45,11329,1,1,16,20,60,40,136
+2025,USINWEQ,Westfield QT,30,45,22331,2,2,15,20,12,40,87
+2025,USINWEQ,Westfield QT,30,45,14954,3,5,13,18,30,20,81
+2025,USINWEQ,Westfield QT,30,45,14596,4,4,14,18,12,20,64
+2025,USINWEQ,Westfield QT,30,45,13414,5,8,12,16,12,5,45
+2025,USINWEQ,Westfield QT,30,45,12014,6,18,9,19,15,0,43
+2025,USINWEQ,Westfield QT,30,45,8149,7,6,13,17,12,0,42
+2025,USINWEQ,Westfield QT,30,45,8793,8,9,11,15,6,10,42
+2025,USINWEQ,Westfield QT,30,45,4366,9,3,14,19,6,0,39
+2025,USINWEQ,Westfield QT,30,45,8578,10,21,8,17,12,0,37
+2025,USINWEQ,Westfield QT,30,45,30458,11,10,11,15,0,10,36
+2025,USINWEQ,Westfield QT,30,45,31732,12,7,12,16,0,5,33
+2025,USINWEQ,Westfield QT,30,45,25680,13,15,9,0,12,0,21
+2025,USINWEQ,Westfield QT,30,45,21931,14,24,6,0,12,0,18
+2025,USINWEQ,Westfield QT,30,45,11959,15,14,10,0,6,0,16
+2025,USINWEQ,Westfield QT,30,45,22069,16,19,8,0,6,0,14
+2025,USINWEQ,Westfield QT,30,45,8791,17,23,7,0,6,0,13
+2025,USINWEQ,Westfield QT,30,45,24202,18,25,6,0,6,0,12
+2025,USINWEQ,Westfield QT,30,45,13295,19,11,11,0,0,0,11
+2025,USINWEQ,Westfield QT,30,45,22067,20,28,4,0,6,0,10
+2025,USINWEQ,Westfield QT,30,45,26660,21,12,10,0,0,0,10
+2025,USINWEQ,Westfield QT,30,45,30350,22,13,10,0,0,0,10
+2025,USINWEQ,Westfield QT,30,45,19932,23,16,9,0,0,0,9
+2025,USINWEQ,Westfield QT,30,45,24549,24,17,9,0,0,0,9
+2025,USINWEQ,Westfield QT,30,45,6518,25,20,8,0,0,0,8
+2025,USINWEQ,Westfield QT,30,45,26448,26,22,7,0,0,0,7
+2025,USINWEQ,Westfield QT,30,45,13246,27,26,5,0,0,0,5
+2025,USINWEQ,Westfield QT,30,45,32536,28,27,5,0,0,0,5
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,6255,1,6,13,19,60,10,102
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28035,2,1,16,20,12,40,88
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,18966,3,2,14,20,12,40,86
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,18969,4,10,10,18,12,20,60
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,18967,5,5,11,18,0,20,49
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28037,6,3,9,17,12,5,43
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28036,7,9,12,19,0,10,41
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28040,8,8,7,0,30,0,37
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28030,9,7,9,17,0,5,31
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,20803,10,12,8,0,12,0,20
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,18968,11,11,6,0,12,0,18
+2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28038,12,4,5,0,12,0,17
 2025,USMIAVLT,Avondale SKILLS League Tournament,28,38,18965,1,5,15,20,60,40,135
 2025,USMIAVLT,Avondale SKILLS League Tournament,28,38,25091,2,1,16,20,30,40,106
 2025,USMIAVLT,Avondale SKILLS League Tournament,28,38,25099,3,6,13,19,15,20,67
@@ -925,86 +1038,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMIAVLT,Avondale SKILLS League Tournament,28,38,25080,19,11,6,0,0,0,6
 2025,USMIAVLT,Avondale SKILLS League Tournament,28,38,22308,20,15,5,0,0,0,5
 2025,USMIAVLT,Avondale SKILLS League Tournament,28,38,25094,21,20,4,0,0,0,4
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,6255,1,6,13,19,60,10,102
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28035,2,1,16,20,12,40,88
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,18966,3,2,14,20,12,40,86
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,18969,4,10,10,18,12,20,60
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,18967,5,5,11,18,0,20,49
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28037,6,3,9,17,12,5,43
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28036,7,9,12,19,0,10,41
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28040,8,8,7,0,30,0,37
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28030,9,7,9,17,0,5,31
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,20803,10,12,8,0,12,0,20
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,18968,11,11,6,0,12,0,18
-2025,USMIAVLT1,Avondale PLAY League Tournament,13,21,28038,12,4,5,0,12,0,17
-2025,USMIBRQ,Big Rapids Qualifier,37,52,19429,1,6,13,16,60,5,94
-2025,USMIBRQ,Big Rapids Qualifier,37,52,15104,2,2,15,20,12,40,87
-2025,USMIBRQ,Big Rapids Qualifier,37,52,29694,3,5,14,17,30,20,81
-2025,USMIBRQ,Big Rapids Qualifier,37,52,30529,4,1,16,20,0,40,76
-2025,USMIBRQ,Big Rapids Qualifier,37,52,8513,5,10,12,17,12,20,61
-2025,USMIBRQ,Big Rapids Qualifier,37,52,13702,6,12,11,15,12,10,48
-2025,USMIBRQ,Big Rapids Qualifier,37,52,20245,7,11,11,16,15,5,47
-2025,USMIBRQ,Big Rapids Qualifier,37,52,11855,8,7,13,15,6,10,44
-2025,USMIBRQ,Big Rapids Qualifier,37,52,10484,9,14,10,18,12,0,40
-2025,USMIBRQ,Big Rapids Qualifier,37,52,26153,10,3,15,19,0,0,34
-2025,USMIBRQ,Big Rapids Qualifier,37,52,20901,11,4,14,18,0,0,32
-2025,USMIBRQ,Big Rapids Qualifier,37,52,26558,12,15,10,19,0,0,29
-2025,USMIBRQ,Big Rapids Qualifier,37,52,9087,13,16,10,0,12,0,22
-2025,USMIBRQ,Big Rapids Qualifier,37,52,27609,14,17,10,0,12,0,22
-2025,USMIBRQ,Big Rapids Qualifier,37,52,5618,15,21,9,0,12,0,21
-2025,USMIBRQ,Big Rapids Qualifier,37,52,14403,16,18,9,0,12,0,21
-2025,USMIBRQ,Big Rapids Qualifier,37,52,7772,17,8,12,0,6,0,18
-2025,USMIBRQ,Big Rapids Qualifier,37,52,14788,22,27,7,0,6,0,13
-2025,USMIBRQ,Big Rapids Qualifier,37,52,17401,23,26,7,0,6,0,13
-2025,USMIBRQ,Big Rapids Qualifier,37,52,13885,24,28,6,0,6,0,12
-2025,USMIBRQ,Big Rapids Qualifier,37,52,13335,25,9,12,0,0,0,12
-2025,USMIBRQ,Big Rapids Qualifier,37,52,6494,26,30,5,0,6,0,11
-2025,USMIBRQ,Big Rapids Qualifier,37,52,20862,27,13,11,0,0,0,11
-2025,USMIBRQ,Big Rapids Qualifier,37,52,21622,28,32,4,0,6,0,10
-2025,USMIBRQ,Big Rapids Qualifier,37,52,6043,29,19,9,0,0,0,9
-2025,USMIBRQ,Big Rapids Qualifier,37,52,11940,30,20,9,0,0,0,9
-2025,USMIBRQ,Big Rapids Qualifier,37,52,7911,31,24,8,0,0,0,8
-2025,USMIBRQ,Big Rapids Qualifier,37,52,30587,32,22,8,0,0,0,8
-2025,USMIBRQ,Big Rapids Qualifier,37,52,32190,33,23,8,0,0,0,8
-2025,USMIBRQ,Big Rapids Qualifier,37,52,22091,34,25,7,0,0,0,7
-2025,USMIBRQ,Big Rapids Qualifier,37,52,32022,35,29,6,0,0,0,6
-2025,USMIBRQ,Big Rapids Qualifier,37,52,20863,36,31,5,0,0,0,5
-2025,USMIBRQ,Big Rapids Qualifier,37,52,30376,37,33,4,0,0,0,4
-2025,USMICHQ,Chelsea Qualifier,35,54,10309,1,3,15,19,60,5,99
-2025,USMICHQ,Chelsea Qualifier,35,54,10644,2,1,16,20,12,40,88
-2025,USMICHQ,Chelsea Qualifier,35,54,26606,3,4,14,20,12,40,86
-2025,USMICHQ,Chelsea Qualifier,35,54,10645,4,9,12,16,12,20,60
-2025,USMICHQ,Chelsea Qualifier,35,54,16714,5,8,12,17,30,0,59
-2025,USMICHQ,Chelsea Qualifier,35,54,10538,6,6,13,18,15,10,56
-2025,USMICHQ,Chelsea Qualifier,35,54,21790,7,16,10,16,6,20,52
-2025,USMICHQ,Chelsea Qualifier,35,54,30453,8,5,14,18,0,10,42
-2025,USMICHQ,Chelsea Qualifier,35,54,21859,9,2,15,19,0,5,39
-2025,USMICHQ,Chelsea Qualifier,35,54,14649,10,7,13,17,6,0,36
-2025,USMICHQ,Chelsea Qualifier,35,54,6079,11,10,12,15,0,0,27
-2025,USMICHQ,Chelsea Qualifier,35,54,27030,12,22,9,15,0,0,24
-2025,USMICHQ,Chelsea Qualifier,35,54,11254,13,12,11,0,12,0,23
-2025,USMICHQ,Chelsea Qualifier,35,54,14739,14,13,11,0,12,0,23
-2025,USMICHQ,Chelsea Qualifier,35,54,15004,15,11,11,0,12,0,23
-2025,USMICHQ,Chelsea Qualifier,35,54,11193,16,17,10,0,12,0,22
-2025,USMICHQ,Chelsea Qualifier,35,54,20294,17,27,7,0,12,0,19
-2025,USMICHQ,Chelsea Qualifier,35,54,10477,18,19,9,0,6,0,15
-2025,USMICHQ,Chelsea Qualifier,35,54,23439,19,20,9,0,6,0,15
-2025,USMICHQ,Chelsea Qualifier,35,54,11617,20,25,8,0,6,0,14
-2025,USMICHQ,Chelsea Qualifier,35,54,8646,21,33,5,0,6,0,11
-2025,USMICHQ,Chelsea Qualifier,35,54,17349,22,14,11,0,0,0,11
-2025,USMICHQ,Chelsea Qualifier,35,54,17039,23,18,10,0,0,0,10
-2025,USMICHQ,Chelsea Qualifier,35,54,19383,24,15,10,0,0,0,10
-2025,USMICHQ,Chelsea Qualifier,35,54,11729,25,21,9,0,0,0,9
-2025,USMICHQ,Chelsea Qualifier,35,54,11618,26,24,8,0,0,0,8
-2025,USMICHQ,Chelsea Qualifier,35,54,12085,27,23,8,0,0,0,8
-2025,USMICHQ,Chelsea Qualifier,35,54,26293,28,26,8,0,0,0,8
-2025,USMICHQ,Chelsea Qualifier,35,54,12111,29,28,7,0,0,0,7
-2025,USMICHQ,Chelsea Qualifier,35,54,15301,30,29,7,0,0,0,7
-2025,USMICHQ,Chelsea Qualifier,35,54,19382,31,30,6,0,0,0,6
-2025,USMICHQ,Chelsea Qualifier,35,54,24493,32,31,6,0,0,0,6
-2025,USMICHQ,Chelsea Qualifier,35,54,12181,33,32,5,0,0,0,5
-2025,USMICHQ,Chelsea Qualifier,35,54,10721,34,34,4,0,0,0,4
-2025,USMICHQ,Chelsea Qualifier,35,54,32873,35,35,4,0,0,0,4
 2025,USMIBCQ,Lakeview Qualifier,36,55,15104,1,2,15,20,60,40,135
 2025,USMIBCQ,Lakeview Qualifier,36,55,10255,2,1,16,20,12,40,88
 2025,USMIBCQ,Lakeview Qualifier,36,55,16646,3,18,10,19,30,20,79
@@ -1067,6 +1100,74 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMICOQ,Coloma Qualifier,26,44,27166,24,21,7,0,0,0,7
 2025,USMICOQ,Coloma Qualifier,26,44,11786,25,25,5,0,0,0,5
 2025,USMICOQ,Coloma Qualifier,26,44,27609,26,24,5,0,0,0,5
+2025,USMICHQ,Chelsea Qualifier,35,54,10309,1,3,15,19,60,5,99
+2025,USMICHQ,Chelsea Qualifier,35,54,10644,2,1,16,20,12,40,88
+2025,USMICHQ,Chelsea Qualifier,35,54,26606,3,4,14,20,12,40,86
+2025,USMICHQ,Chelsea Qualifier,35,54,10645,4,9,12,16,12,20,60
+2025,USMICHQ,Chelsea Qualifier,35,54,16714,5,8,12,17,30,0,59
+2025,USMICHQ,Chelsea Qualifier,35,54,10538,6,6,13,18,15,10,56
+2025,USMICHQ,Chelsea Qualifier,35,54,21790,7,16,10,16,6,20,52
+2025,USMICHQ,Chelsea Qualifier,35,54,30453,8,5,14,18,0,10,42
+2025,USMICHQ,Chelsea Qualifier,35,54,21859,9,2,15,19,0,5,39
+2025,USMICHQ,Chelsea Qualifier,35,54,14649,10,7,13,17,6,0,36
+2025,USMICHQ,Chelsea Qualifier,35,54,6079,11,10,12,15,0,0,27
+2025,USMICHQ,Chelsea Qualifier,35,54,27030,12,22,9,15,0,0,24
+2025,USMICHQ,Chelsea Qualifier,35,54,11254,13,12,11,0,12,0,23
+2025,USMICHQ,Chelsea Qualifier,35,54,14739,14,13,11,0,12,0,23
+2025,USMICHQ,Chelsea Qualifier,35,54,15004,15,11,11,0,12,0,23
+2025,USMICHQ,Chelsea Qualifier,35,54,11193,16,17,10,0,12,0,22
+2025,USMICHQ,Chelsea Qualifier,35,54,20294,17,27,7,0,12,0,19
+2025,USMICHQ,Chelsea Qualifier,35,54,10477,18,19,9,0,6,0,15
+2025,USMICHQ,Chelsea Qualifier,35,54,23439,19,20,9,0,6,0,15
+2025,USMICHQ,Chelsea Qualifier,35,54,11617,20,25,8,0,6,0,14
+2025,USMICHQ,Chelsea Qualifier,35,54,8646,21,33,5,0,6,0,11
+2025,USMICHQ,Chelsea Qualifier,35,54,17349,22,14,11,0,0,0,11
+2025,USMICHQ,Chelsea Qualifier,35,54,17039,23,18,10,0,0,0,10
+2025,USMICHQ,Chelsea Qualifier,35,54,19383,24,15,10,0,0,0,10
+2025,USMICHQ,Chelsea Qualifier,35,54,11729,25,21,9,0,0,0,9
+2025,USMICHQ,Chelsea Qualifier,35,54,11618,26,24,8,0,0,0,8
+2025,USMICHQ,Chelsea Qualifier,35,54,12085,27,23,8,0,0,0,8
+2025,USMICHQ,Chelsea Qualifier,35,54,26293,28,26,8,0,0,0,8
+2025,USMICHQ,Chelsea Qualifier,35,54,12111,29,28,7,0,0,0,7
+2025,USMICHQ,Chelsea Qualifier,35,54,15301,30,29,7,0,0,0,7
+2025,USMICHQ,Chelsea Qualifier,35,54,19382,31,30,6,0,0,0,6
+2025,USMICHQ,Chelsea Qualifier,35,54,24493,32,31,6,0,0,0,6
+2025,USMICHQ,Chelsea Qualifier,35,54,12181,33,32,5,0,0,0,5
+2025,USMICHQ,Chelsea Qualifier,35,54,10721,34,34,4,0,0,0,4
+2025,USMICHQ,Chelsea Qualifier,35,54,32873,35,35,4,0,0,0,4
+2025,USMIBRQ,Big Rapids Qualifier,37,52,19429,1,6,13,16,60,5,94
+2025,USMIBRQ,Big Rapids Qualifier,37,52,15104,2,2,15,20,12,40,87
+2025,USMIBRQ,Big Rapids Qualifier,37,52,29694,3,5,14,17,30,20,81
+2025,USMIBRQ,Big Rapids Qualifier,37,52,30529,4,1,16,20,0,40,76
+2025,USMIBRQ,Big Rapids Qualifier,37,52,8513,5,10,12,17,12,20,61
+2025,USMIBRQ,Big Rapids Qualifier,37,52,13702,6,12,11,15,12,10,48
+2025,USMIBRQ,Big Rapids Qualifier,37,52,20245,7,11,11,16,15,5,47
+2025,USMIBRQ,Big Rapids Qualifier,37,52,11855,8,7,13,15,6,10,44
+2025,USMIBRQ,Big Rapids Qualifier,37,52,10484,9,14,10,18,12,0,40
+2025,USMIBRQ,Big Rapids Qualifier,37,52,26153,10,3,15,19,0,0,34
+2025,USMIBRQ,Big Rapids Qualifier,37,52,20901,11,4,14,18,0,0,32
+2025,USMIBRQ,Big Rapids Qualifier,37,52,26558,12,15,10,19,0,0,29
+2025,USMIBRQ,Big Rapids Qualifier,37,52,9087,13,16,10,0,12,0,22
+2025,USMIBRQ,Big Rapids Qualifier,37,52,27609,14,17,10,0,12,0,22
+2025,USMIBRQ,Big Rapids Qualifier,37,52,5618,15,21,9,0,12,0,21
+2025,USMIBRQ,Big Rapids Qualifier,37,52,14403,16,18,9,0,12,0,21
+2025,USMIBRQ,Big Rapids Qualifier,37,52,7772,17,8,12,0,6,0,18
+2025,USMIBRQ,Big Rapids Qualifier,37,52,14788,22,27,7,0,6,0,13
+2025,USMIBRQ,Big Rapids Qualifier,37,52,17401,23,26,7,0,6,0,13
+2025,USMIBRQ,Big Rapids Qualifier,37,52,13885,24,28,6,0,6,0,12
+2025,USMIBRQ,Big Rapids Qualifier,37,52,13335,25,9,12,0,0,0,12
+2025,USMIBRQ,Big Rapids Qualifier,37,52,6494,26,30,5,0,6,0,11
+2025,USMIBRQ,Big Rapids Qualifier,37,52,20862,27,13,11,0,0,0,11
+2025,USMIBRQ,Big Rapids Qualifier,37,52,21622,28,32,4,0,6,0,10
+2025,USMIBRQ,Big Rapids Qualifier,37,52,6043,29,19,9,0,0,0,9
+2025,USMIBRQ,Big Rapids Qualifier,37,52,11940,30,20,9,0,0,0,9
+2025,USMIBRQ,Big Rapids Qualifier,37,52,7911,31,24,8,0,0,0,8
+2025,USMIBRQ,Big Rapids Qualifier,37,52,30587,32,22,8,0,0,0,8
+2025,USMIBRQ,Big Rapids Qualifier,37,52,32190,33,23,8,0,0,0,8
+2025,USMIBRQ,Big Rapids Qualifier,37,52,22091,34,25,7,0,0,0,7
+2025,USMIBRQ,Big Rapids Qualifier,37,52,32022,35,29,6,0,0,0,6
+2025,USMIBRQ,Big Rapids Qualifier,37,52,20863,36,31,5,0,0,0,5
+2025,USMIBRQ,Big Rapids Qualifier,37,52,30376,37,33,4,0,0,0,4
 2025,USMICPLT,Capital League Tournament,32,51,23391,1,4,15,19,60,20,114
 2025,USMICPLT,Capital League Tournament,32,51,8142,2,2,16,20,6,40,82
 2025,USMICPLT,Capital League Tournament,32,51,14018,3,5,14,20,6,40,80
@@ -1280,29 +1381,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMIGRQ,Grand Rapids Qualifier,37,57,31577,35,32,6,0,0,0,6
 2025,USMIGRQ,Grand Rapids Qualifier,37,57,7772,36,37,4,0,0,0,4
 2025,USMIGRQ,Grand Rapids Qualifier,37,57,23599,37,36,4,0,0,0,4
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,5663,1,2,15,20,60,40,135
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,7140,2,1,16,20,30,40,106
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,13284,3,3,14,19,12,20,65
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,19679,4,12,10,19,6,20,55
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,10723,5,8,11,16,15,10,52
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,32759,6,7,12,16,12,10,50
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,16957,7,6,12,17,12,5,46
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,17768,8,10,10,17,6,5,38
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,13598,9,5,13,18,6,0,37
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,23588,10,4,13,18,6,0,37
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,20248,11,9,11,15,0,0,26
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,20246,12,11,10,15,0,0,25
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,13533,13,14,9,0,12,0,21
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,17770,14,15,9,0,12,0,21
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,13570,15,17,8,0,12,0,20
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,15357,16,19,7,0,12,0,19
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,15270,17,20,6,0,12,0,18
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,28000,18,16,8,0,6,0,14
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,16032,19,18,7,0,6,0,13
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,30552,20,13,9,0,0,0,9
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,20247,21,21,6,0,0,0,6
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,24654,22,22,5,0,0,0,5
-2025,USMIHOQ,Houghton (UP) Qualifier,25,39,28221,23,23,4,0,0,0,4
 2025,USMIHOQ2,Hartland Qualifier,35,55,21914,1,12,11,17,60,20,108
 2025,USMIHOQ2,Hartland Qualifier,35,55,23623,2,1,16,20,12,40,88
 2025,USMIHOQ2,Hartland Qualifier,35,55,8533,3,2,15,20,6,40,81
@@ -1338,6 +1416,54 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMIHOQ2,Hartland Qualifier,35,55,8487,33,33,5,0,0,0,5
 2025,USMIHOQ2,Hartland Qualifier,35,55,7043,34,34,4,0,0,0,4
 2025,USMIHOQ2,Hartland Qualifier,35,55,21340,35,35,4,0,0,0,4
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,7140,1,1,16,20,12,40,88
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,13002,2,3,14,20,12,40,86
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,6294,3,14,9,19,30,20,78
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,22918,4,15,9,0,60,0,69
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,21482,5,2,15,19,12,20,66
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,17349,6,6,12,16,12,10,50
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,22537,7,24,5,16,12,10,43
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,8777,8,5,13,17,12,0,42
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,15404,9,8,12,15,6,5,38
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,23581,10,10,11,18,6,0,35
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,27404,11,7,12,15,0,5,32
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,32759,12,4,14,18,0,0,32
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,22300,13,11,10,17,0,0,27
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,14649,14,12,10,0,15,0,25
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,11276,15,21,7,0,12,0,19
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,19692,16,22,6,0,12,0,18
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,20512,17,9,11,0,6,0,17
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,17975,18,13,10,0,6,0,16
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,7045,19,18,8,0,6,0,14
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,23856,20,20,7,0,6,0,13
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,12111,21,16,9,0,0,0,9
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,22602,22,17,8,0,0,0,8
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,14771,23,19,7,0,0,0,7
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,14776,24,23,5,0,0,0,5
+2025,USMIGWQ,Grosse Pte. Woods Qualifier,25,42,22805,25,25,4,0,0,0,4
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,5663,1,2,15,20,60,40,135
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,7140,2,1,16,20,30,40,106
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,13284,3,3,14,19,12,20,65
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,19679,4,12,10,19,6,20,55
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,10723,5,8,11,16,15,10,52
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,32759,6,7,12,16,12,10,50
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,16957,7,6,12,17,12,5,46
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,17768,8,10,10,17,6,5,38
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,13598,9,5,13,18,6,0,37
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,23588,10,4,13,18,6,0,37
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,20248,11,9,11,15,0,0,26
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,20246,12,11,10,15,0,0,25
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,13533,13,14,9,0,12,0,21
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,17770,14,15,9,0,12,0,21
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,13570,15,17,8,0,12,0,20
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,15357,16,19,7,0,12,0,19
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,15270,17,20,6,0,12,0,18
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,28000,18,16,8,0,6,0,14
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,16032,19,18,7,0,6,0,13
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,30552,20,13,9,0,0,0,9
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,20247,21,21,6,0,0,0,6
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,24654,22,22,5,0,0,0,5
+2025,USMIHOQ,Houghton (UP) Qualifier,25,39,28221,23,23,4,0,0,0,4
 2025,USMIKEQ,Kentwood Qualifier,35,54,16646,1,7,13,17,60,20,110
 2025,USMIKEQ,Kentwood Qualifier,35,54,11228,2,1,16,20,30,40,106
 2025,USMIKEQ,Kentwood Qualifier,35,54,10104,3,2,15,20,12,40,87
@@ -1553,6 +1679,41 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMIOCLT,OCCRA FTC League Touranment,32,51,23952,30,29,6,0,0,0,6
 2025,USMIOCLT,OCCRA FTC League Touranment,32,51,23479,31,23,5,0,0,0,5
 2025,USMIOCLT,OCCRA FTC League Touranment,32,51,12548,32,22,4,0,0,0,4
+2025,USMIPEQ,Pellston Qualifier,38,54,19940,1,3,15,20,60,5,100
+2025,USMIPEQ,Pellston Qualifier,38,54,15229,2,18,10,17,15,40,82
+2025,USMIPEQ,Pellston Qualifier,38,54,23410,3,6,13,17,6,40,76
+2025,USMIPEQ,Pellston Qualifier,38,54,10477,4,2,15,19,12,20,66
+2025,USMIPEQ,Pellston Qualifier,38,54,5292,5,5,14,19,6,20,59
+2025,USMIPEQ,Pellston Qualifier,38,54,14791,6,8,12,16,30,0,58
+2025,USMIPEQ,Pellston Qualifier,38,54,20159,7,4,14,18,12,10,54
+2025,USMIPEQ,Pellston Qualifier,38,54,8580,8,7,13,18,12,10,53
+2025,USMIPEQ,Pellston Qualifier,38,54,31799,9,1,16,20,12,5,53
+2025,USMIPEQ,Pellston Qualifier,38,54,23597,10,12,11,16,0,0,27
+2025,USMIPEQ,Pellston Qualifier,38,54,23411,11,9,12,15,0,0,27
+2025,USMIPEQ,Pellston Qualifier,38,54,10723,12,16,10,15,0,0,25
+2025,USMIPEQ,Pellston Qualifier,38,54,12876,13,13,11,0,12,0,23
+2025,USMIPEQ,Pellston Qualifier,38,54,5290,14,22,9,0,12,0,21
+2025,USMIPEQ,Pellston Qualifier,38,54,13284,15,20,9,0,12,0,21
+2025,USMIPEQ,Pellston Qualifier,38,54,5411,16,24,8,0,12,0,20
+2025,USMIPEQ,Pellston Qualifier,38,54,31908,17,11,11,0,6,0,17
+2025,USMIPEQ,Pellston Qualifier,38,54,30453,18,15,10,0,6,0,16
+2025,USMIPEQ,Pellston Qualifier,38,54,23588,22,19,9,0,6,0,15
+2025,USMIPEQ,Pellston Qualifier,38,54,8621,23,31,6,0,6,0,12
+2025,USMIPEQ,Pellston Qualifier,38,54,23624,24,10,12,0,0,0,12
+2025,USMIPEQ,Pellston Qualifier,38,54,26421,25,14,11,0,0,0,11
+2025,USMIPEQ,Pellston Qualifier,38,54,31577,26,35,4,0,6,0,10
+2025,USMIPEQ,Pellston Qualifier,38,54,27689,27,17,10,0,0,0,10
+2025,USMIPEQ,Pellston Qualifier,38,54,27461,28,21,9,0,0,0,9
+2025,USMIPEQ,Pellston Qualifier,38,54,15270,29,26,8,0,0,0,8
+2025,USMIPEQ,Pellston Qualifier,38,54,21353,30,25,8,0,0,0,8
+2025,USMIPEQ,Pellston Qualifier,38,54,31738,31,23,8,0,0,0,8
+2025,USMIPEQ,Pellston Qualifier,38,54,14638,32,27,7,0,0,0,7
+2025,USMIPEQ,Pellston Qualifier,38,54,15724,33,28,7,0,0,0,7
+2025,USMIPEQ,Pellston Qualifier,38,54,15814,34,29,7,0,0,0,7
+2025,USMIPEQ,Pellston Qualifier,38,54,23599,35,30,6,0,0,0,6
+2025,USMIPEQ,Pellston Qualifier,38,54,14040,36,32,5,0,0,0,5
+2025,USMIPEQ,Pellston Qualifier,38,54,32241,37,33,5,0,0,0,5
+2025,USMIPEQ,Pellston Qualifier,38,54,10474,38,34,4,0,0,0,4
 2025,USMIOTQ,Lake Orion Qualifier,36,55,7252,1,3,15,20,12,40,87
 2025,USMIOTQ,Lake Orion Qualifier,36,55,7253,2,4,14,19,30,20,83
 2025,USMIOTQ,Lake Orion Qualifier,36,55,23392,3,1,16,20,6,40,82
@@ -1589,41 +1750,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMIOTQ,Lake Orion Qualifier,36,55,16742,34,34,5,0,0,0,5
 2025,USMIOTQ,Lake Orion Qualifier,36,55,19949,35,35,4,0,0,0,4
 2025,USMIOTQ,Lake Orion Qualifier,36,55,23952,36,36,4,0,0,0,4
-2025,USMIPEQ,Pellston Qualifier,38,54,19940,1,3,15,20,60,5,100
-2025,USMIPEQ,Pellston Qualifier,38,54,15229,2,18,10,17,15,40,82
-2025,USMIPEQ,Pellston Qualifier,38,54,23410,3,6,13,17,6,40,76
-2025,USMIPEQ,Pellston Qualifier,38,54,10477,4,2,15,19,12,20,66
-2025,USMIPEQ,Pellston Qualifier,38,54,5292,5,5,14,19,6,20,59
-2025,USMIPEQ,Pellston Qualifier,38,54,14791,6,8,12,16,30,0,58
-2025,USMIPEQ,Pellston Qualifier,38,54,20159,7,4,14,18,12,10,54
-2025,USMIPEQ,Pellston Qualifier,38,54,8580,8,7,13,18,12,10,53
-2025,USMIPEQ,Pellston Qualifier,38,54,31799,9,1,16,20,12,5,53
-2025,USMIPEQ,Pellston Qualifier,38,54,23597,10,12,11,16,0,0,27
-2025,USMIPEQ,Pellston Qualifier,38,54,23411,11,9,12,15,0,0,27
-2025,USMIPEQ,Pellston Qualifier,38,54,10723,12,16,10,15,0,0,25
-2025,USMIPEQ,Pellston Qualifier,38,54,12876,13,13,11,0,12,0,23
-2025,USMIPEQ,Pellston Qualifier,38,54,5290,14,22,9,0,12,0,21
-2025,USMIPEQ,Pellston Qualifier,38,54,13284,15,20,9,0,12,0,21
-2025,USMIPEQ,Pellston Qualifier,38,54,5411,16,24,8,0,12,0,20
-2025,USMIPEQ,Pellston Qualifier,38,54,31908,17,11,11,0,6,0,17
-2025,USMIPEQ,Pellston Qualifier,38,54,30453,18,15,10,0,6,0,16
-2025,USMIPEQ,Pellston Qualifier,38,54,23588,22,19,9,0,6,0,15
-2025,USMIPEQ,Pellston Qualifier,38,54,8621,23,31,6,0,6,0,12
-2025,USMIPEQ,Pellston Qualifier,38,54,23624,24,10,12,0,0,0,12
-2025,USMIPEQ,Pellston Qualifier,38,54,26421,25,14,11,0,0,0,11
-2025,USMIPEQ,Pellston Qualifier,38,54,31577,26,35,4,0,6,0,10
-2025,USMIPEQ,Pellston Qualifier,38,54,27689,27,17,10,0,0,0,10
-2025,USMIPEQ,Pellston Qualifier,38,54,27461,28,21,9,0,0,0,9
-2025,USMIPEQ,Pellston Qualifier,38,54,15270,29,26,8,0,0,0,8
-2025,USMIPEQ,Pellston Qualifier,38,54,21353,30,25,8,0,0,0,8
-2025,USMIPEQ,Pellston Qualifier,38,54,31738,31,23,8,0,0,0,8
-2025,USMIPEQ,Pellston Qualifier,38,54,14638,32,27,7,0,0,0,7
-2025,USMIPEQ,Pellston Qualifier,38,54,15724,33,28,7,0,0,0,7
-2025,USMIPEQ,Pellston Qualifier,38,54,15814,34,29,7,0,0,0,7
-2025,USMIPEQ,Pellston Qualifier,38,54,23599,35,30,6,0,0,0,6
-2025,USMIPEQ,Pellston Qualifier,38,54,14040,36,32,5,0,0,0,5
-2025,USMIPEQ,Pellston Qualifier,38,54,32241,37,33,5,0,0,0,5
-2025,USMIPEQ,Pellston Qualifier,38,54,10474,38,34,4,0,0,0,4
 2025,USMIROQ,Royal Oak Qualifier,35,55,13684,1,3,15,20,60,40,135
 2025,USMIROQ,Royal Oak Qualifier,35,55,24253,2,1,16,20,12,40,88
 2025,USMIROQ,Royal Oak Qualifier,35,55,7693,3,5,14,18,15,20,67
@@ -1723,6 +1849,8 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMISCLT,South Central League Tournament,31,49,9458,27,25,6,0,0,0,6
 2025,USMISCLT,South Central League Tournament,31,49,31247,28,8,6,0,0,0,6
 2025,USMISCLT,South Central League Tournament,31,49,27155,29,26,5,0,0,0,5
+2025,USMNMGQ1,Maple Grove Saturday Qualifier,21,42,26820,1,1,16,20,30,40,106
+2025,USMNMGQ1,Maple Grove Saturday Qualifier,21,42,8636,3,2,3,19,12,20,54
 2025,USMITEQ,Bedford Qualifier,36,55,15465,1,4,14,20,60,40,134
 2025,USMITEQ,Bedford Qualifier,36,55,5237,2,1,16,20,30,40,106
 2025,USMITEQ,Bedford Qualifier,36,55,14790,3,3,15,18,12,20,65
@@ -1759,6 +1887,39 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMITEQ,Bedford Qualifier,36,55,27153,34,34,5,0,0,0,5
 2025,USMITEQ,Bedford Qualifier,36,55,23582,35,35,4,0,0,0,4
 2025,USMITEQ,Bedford Qualifier,36,55,24441,36,36,4,0,0,0,4
+2025,USMNCOQ,MN FTC Cottonwood Saturday,9,16,26383,1,1,16,20,60,40,136
+2025,USMNCOQ,MN FTC Cottonwood Saturday,9,16,5962,2,4,11,20,12,40,83
+2025,USMNCOQ,MN FTC Cottonwood Saturday,9,16,22181,3,2,14,19,12,20,65
+2025,USMNCOQ,MN FTC Cottonwood Saturday,9,16,24172,4,6,9,19,12,20,60
+2025,USMNCOQ,MN FTC Cottonwood Saturday,9,16,15295,5,3,12,0,0,0,12
+2025,USMNCOQ,MN FTC Cottonwood Saturday,9,16,18626,6,5,10,0,0,0,10
+2025,USMNCOQ,MN FTC Cottonwood Saturday,9,16,27634,7,7,8,0,0,0,8
+2025,USMNCOQ,MN FTC Cottonwood Saturday,9,16,24097,8,8,7,0,0,0,7
+2025,USMNCOQ,MN FTC Cottonwood Saturday,9,16,20107,9,9,5,0,0,0,5
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,27202,1,1,16,20,60,20,116
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,10430,2,2,15,19,12,40,86
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,23363,3,4,13,20,30,20,83
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,26529,4,7,12,19,0,40,71
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,22351,5,10,11,17,12,10,50
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,30307,6,3,14,18,12,5,49
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,14931,7,5,13,18,12,5,48
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,14672,8,6,12,17,0,10,39
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,22349,9,15,9,15,12,0,36
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,22350,10,9,11,16,0,0,27
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,24183,11,8,11,16,0,0,27
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,22352,12,11,10,15,0,0,25
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,13247,13,20,7,0,15,0,22
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,8034,14,14,9,0,12,0,21
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,31698,15,16,8,0,12,0,20
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,24062,16,24,4,0,6,0,10
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,11613,17,12,10,0,0,0,10
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,11609,18,13,9,0,0,0,9
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,11117,19,18,8,0,0,0,8
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,28208,20,17,8,0,0,0,8
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,23815,21,19,7,0,0,0,7
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,12660,22,21,6,0,0,0,6
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,22353,23,22,6,0,0,0,6
+2025,USMNMGQ2,Maple Grove Sunday Qualifier,24,47,26528,24,23,5,0,0,0,5
 2025,USMNSAQ1,MN FTC Prior Lake Saturday,24,47,6699,1,4,13,18,60,0,91
 2025,USMNSAQ1,MN FTC Prior Lake Saturday,24,47,26820,2,1,16,20,12,40,88
 2025,USMNSAQ1,MN FTC Prior Lake Saturday,24,47,30390,3,2,15,20,6,40,81
@@ -1805,18 +1966,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMNSAQ2,MN FTC Prior Lake Sunday,24,43,26171,20,19,6,0,0,0,6
 2025,USMNSAQ2,MN FTC Prior Lake Sunday,24,43,31190,21,20,6,0,0,0,6
 2025,USMNSAQ2,MN FTC Prior Lake Sunday,24,43,14091,22,22,4,0,0,0,4
-2025,USMSTUQ,Tupelo Qualifier,12,24,23521,1,2,14,20,60,40,134
-2025,USMSTUQ,Tupelo Qualifier,12,24,8803,2,1,16,20,30,40,106
-2025,USMSTUQ,Tupelo Qualifier,12,24,23394,3,5,11,18,12,20,61
-2025,USMSTUQ,Tupelo Qualifier,12,24,8772,4,6,10,18,12,20,60
-2025,USMSTUQ,Tupelo Qualifier,12,24,23659,5,3,13,19,12,10,54
-2025,USMSTUQ,Tupelo Qualifier,12,24,12390,6,4,12,19,12,10,53
-2025,USMSTUQ,Tupelo Qualifier,12,24,14800,7,7,9,17,12,5,43
-2025,USMSTUQ,Tupelo Qualifier,12,24,23577,8,8,9,17,0,5,31
-2025,USMSTUQ,Tupelo Qualifier,12,24,31728,9,9,8,0,12,0,20
-2025,USMSTUQ,Tupelo Qualifier,12,24,8690,10,11,6,0,12,0,18
-2025,USMSTUQ,Tupelo Qualifier,12,24,24073,11,10,7,0,0,0,7
-2025,USMSTUQ,Tupelo Qualifier,12,24,23745,12,12,5,0,0,0,5
 2025,USMTBUQ,Montana Qualifier - Butte MT-Tech,36,53,18240,1,3,15,18,60,10,103
 2025,USMTBUQ,Montana Qualifier - Butte MT-Tech,36,53,8271,2,1,16,20,12,40,88
 2025,USMTBUQ,Montana Qualifier - Butte MT-Tech,36,53,724,3,4,14,20,12,40,86
@@ -1851,6 +2000,29 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USMTBUQ,Montana Qualifier - Butte MT-Tech,36,53,54,34,30,6,0,0,0,6
 2025,USMTBUQ,Montana Qualifier - Butte MT-Tech,36,53,22520,35,29,6,0,0,0,6
 2025,USMTBUQ,Montana Qualifier - Butte MT-Tech,36,53,12727,36,34,4,0,0,0,4
+2025,USMSTUQ,Tupelo Qualifier,12,24,23521,1,2,14,20,60,40,134
+2025,USMSTUQ,Tupelo Qualifier,12,24,8803,2,1,16,20,30,40,106
+2025,USMSTUQ,Tupelo Qualifier,12,24,23394,3,5,11,18,12,20,61
+2025,USMSTUQ,Tupelo Qualifier,12,24,8772,4,6,10,18,12,20,60
+2025,USMSTUQ,Tupelo Qualifier,12,24,23659,5,3,13,19,12,10,54
+2025,USMSTUQ,Tupelo Qualifier,12,24,12390,6,4,12,19,12,10,53
+2025,USMSTUQ,Tupelo Qualifier,12,24,14800,7,7,9,17,12,5,43
+2025,USMSTUQ,Tupelo Qualifier,12,24,23577,8,8,9,17,0,5,31
+2025,USMSTUQ,Tupelo Qualifier,12,24,31728,9,9,8,0,12,0,20
+2025,USMSTUQ,Tupelo Qualifier,12,24,8690,10,11,6,0,12,0,18
+2025,USMSTUQ,Tupelo Qualifier,12,24,24073,11,10,7,0,0,0,7
+2025,USMSTUQ,Tupelo Qualifier,12,24,23745,12,12,5,0,0,0,5
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,5477,1,1,16,20,60,40,136
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,10738,2,3,13,20,12,40,85
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,8109,3,5,11,18,30,20,79
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,4137,4,4,12,18,12,20,62
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,7407,5,7,9,19,12,10,50
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,23707,6,2,14,19,0,10,43
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,27168,7,8,8,17,12,5,42
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,32048,8,6,10,17,0,5,32
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,8013,9,9,7,0,12,0,19
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,3540,10,10,6,0,12,0,18
+2025,USNYLIBAQ,New York - Long Island Qualifier #1,12,20,8110,11,11,5,0,12,0,17
 2025,USNYEXHJQ,John Jay Qualifier,28,45,4809,1,4,14,18,60,5,97
 2025,USNYEXHJQ,John Jay Qualifier,28,45,21580,2,2,15,20,30,20,85
 2025,USNYEXHJQ,John Jay Qualifier,28,45,6955,3,9,11,19,12,40,82
@@ -1930,6 +2102,26 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USNYNYNYQ1,NYC Qualifier 1,21,38,31591,19,14,8,0,0,0,8
 2025,USNYNYNYQ1,NYC Qualifier 1,21,38,9371,20,17,7,0,0,0,7
 2025,USNYNYNYQ1,NYC Qualifier 1,21,38,24038,21,19,6,0,0,0,6
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,17253,1,17,7,19,60,10,96
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,5361,2,6,12,18,12,40,82
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,9372,3,3,14,18,0,40,72
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,8088,4,1,16,20,12,20,68
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,8087,5,12,9,20,0,20,49
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,10392,6,8,11,17,12,5,45
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,23210,7,2,15,19,0,10,44
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,11943,8,14,8,0,30,0,38
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,18898,9,4,13,17,0,5,35
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,10393,10,7,11,0,12,0,23
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,3006,11,13,9,0,12,0,21
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,20701,12,11,9,0,12,0,21
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,3371,13,19,5,0,12,0,17
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,32751,14,20,4,0,12,0,16
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,4785,15,5,12,0,0,0,12
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,13475,16,10,10,0,0,0,10
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,24047,17,9,10,0,0,0,10
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,19672,18,15,8,0,0,0,8
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,9384,19,16,7,0,0,0,7
+2025,USNYNYBRQ2,NYC Qualifier 3,22,32,14639,20,18,6,0,0,0,6
 2025,USPALAQ1,Lancaster Area Qualifier,29,45,20153,1,1,16,20,30,40,106
 2025,USPALAQ1,Lancaster Area Qualifier,29,45,18603,2,4,14,19,60,10,103
 2025,USPALAQ1,Lancaster Area Qualifier,29,45,21364,3,3,14,20,12,40,86
@@ -1958,6 +2150,32 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USPALAQ1,Lancaster Area Qualifier,29,45,14133,26,26,5,0,0,0,5
 2025,USPALAQ1,Lancaster Area Qualifier,29,45,16354,27,27,5,0,0,0,5
 2025,USPALAQ1,Lancaster Area Qualifier,29,45,30802,28,28,4,0,0,0,4
+2025,USPALAQ2,Blue Streak Qualifier,26,43,8393,1,1,16,20,60,20,116
+2025,USPALAQ2,Blue Streak Qualifier,26,43,25650,2,6,13,19,30,40,102
+2025,USPALAQ2,Blue Streak Qualifier,26,43,7244,3,2,15,19,12,40,86
+2025,USPALAQ2,Blue Streak Qualifier,26,43,22312,4,4,14,20,12,20,66
+2025,USPALAQ2,Blue Streak Qualifier,26,43,10333,5,10,11,15,15,5,46
+2025,USPALAQ2,Blue Streak Qualifier,26,43,32289,6,3,14,18,0,10,42
+2025,USPALAQ2,Blue Streak Qualifier,26,43,11349,7,5,13,18,0,10,41
+2025,USPALAQ2,Blue Streak Qualifier,26,43,26566,8,17,8,15,12,5,40
+2025,USPALAQ2,Blue Streak Qualifier,26,43,8645,9,9,11,17,12,0,40
+2025,USPALAQ2,Blue Streak Qualifier,26,43,25795,10,8,12,16,12,0,40
+2025,USPALAQ2,Blue Streak Qualifier,26,43,19844,11,7,12,17,0,0,29
+2025,USPALAQ2,Blue Streak Qualifier,26,43,21928,12,11,11,16,0,0,27
+2025,USPALAQ2,Blue Streak Qualifier,26,43,26446,13,21,7,0,12,0,19
+2025,USPALAQ2,Blue Streak Qualifier,26,43,7423,14,22,6,0,12,0,18
+2025,USPALAQ2,Blue Streak Qualifier,26,43,4914,15,24,5,0,12,0,17
+2025,USPALAQ2,Blue Streak Qualifier,26,43,26867,16,23,6,0,6,0,12
+2025,USPALAQ2,Blue Streak Qualifier,26,43,21728,17,13,10,0,0,0,10
+2025,USPALAQ2,Blue Streak Qualifier,26,43,22828,18,12,10,0,0,0,10
+2025,USPALAQ2,Blue Streak Qualifier,26,43,17388,19,16,9,0,0,0,9
+2025,USPALAQ2,Blue Streak Qualifier,26,43,19427,20,15,9,0,0,0,9
+2025,USPALAQ2,Blue Streak Qualifier,26,43,26893,21,14,9,0,0,0,9
+2025,USPALAQ2,Blue Streak Qualifier,26,43,21727,22,18,8,0,0,0,8
+2025,USPALAQ2,Blue Streak Qualifier,26,43,25671,23,19,8,0,0,0,8
+2025,USPALAQ2,Blue Streak Qualifier,26,43,26868,24,20,7,0,0,0,7
+2025,USPALAQ2,Blue Streak Qualifier,26,43,31180,25,25,5,0,0,0,5
+2025,USPALAQ2,Blue Streak Qualifier,26,43,31181,26,26,4,0,0,0,4
 2025,USTXDAQ1,FiT-North Early Bird Qualifier,24,46,8565,1,4,13,19,60,20,112
 2025,USTXDAQ1,FiT-North Early Bird Qualifier,24,46,19564,2,3,14,20,30,40,104
 2025,USTXDAQ1,FiT-North Early Bird Qualifier,24,46,21171,3,1,16,20,12,40,88
@@ -1982,6 +2200,31 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USTXDAQ1,FiT-North Early Bird Qualifier,24,46,20482,22,19,7,0,0,0,7
 2025,USTXDAQ1,FiT-North Early Bird Qualifier,24,46,13542,23,21,6,0,0,0,6
 2025,USTXDAQ1,FiT-North Early Bird Qualifier,24,46,31585,24,23,5,0,0,0,5
+2025,USWAPALT1,Pasteur League Tournament,25,42,30355,1,1,15,19,60,10,104
+2025,USWAPALT1,Pasteur League Tournament,25,42,9880,2,2,14,20,30,40,104
+2025,USWAPALT1,Pasteur League Tournament,25,42,3805,3,3,16,20,12,40,88
+2025,USWAPALT1,Pasteur League Tournament,25,42,8628,4,5,14,18,12,20,64
+2025,USWAPALT1,Pasteur League Tournament,25,42,21315,5,20,12,18,6,20,56
+2025,USWAPALT1,Pasteur League Tournament,25,42,23305,6,4,13,19,12,10,54
+2025,USWAPALT1,Pasteur League Tournament,25,42,7462,7,11,9,17,12,5,43
+2025,USWAPALT1,Pasteur League Tournament,25,42,7198,8,10,10,15,15,0,40
+2025,USWAPALT1,Pasteur League Tournament,25,42,31065,9,7,11,16,12,0,39
+2025,USWAPALT1,Pasteur League Tournament,25,42,5619,10,13,12,17,0,5,34
+2025,USWAPALT1,Pasteur League Tournament,25,42,2939,11,6,11,16,0,0,27
+2025,USWAPALT1,Pasteur League Tournament,25,42,22299,12,23,10,15,0,0,25
+2025,USWAPALT1,Pasteur League Tournament,25,42,3491,13,18,12,0,12,0,24
+2025,USWAPALT1,Pasteur League Tournament,25,42,4042,14,8,9,0,12,0,21
+2025,USWAPALT1,Pasteur League Tournament,25,42,3231,15,21,8,0,12,0,20
+2025,USWAPALT1,Pasteur League Tournament,25,42,24252,16,15,10,0,0,0,10
+2025,USWAPALT1,Pasteur League Tournament,25,42,32666,17,12,9,0,0,0,9
+2025,USWAPALT1,Pasteur League Tournament,25,42,21871,18,17,8,0,0,0,8
+2025,USWAPALT1,Pasteur League Tournament,25,42,7676,19,16,7,0,0,0,7
+2025,USWAPALT1,Pasteur League Tournament,25,42,22196,20,19,7,0,0,0,7
+2025,USWAPALT1,Pasteur League Tournament,25,42,30611,21,9,7,0,0,0,7
+2025,USWAPALT1,Pasteur League Tournament,25,42,21348,22,22,6,0,0,0,6
+2025,USWAPALT1,Pasteur League Tournament,25,42,17610,23,14,5,0,0,0,5
+2025,USWAPALT1,Pasteur League Tournament,25,42,24423,24,24,5,0,0,0,5
+2025,USWAPALT1,Pasteur League Tournament,25,42,24422,25,25,4,0,0,0,4
 2025,USTXMTQ,FiT-North McKinney Qualifier,22,36,18270,1,1,16,20,60,40,136
 2025,USTXMTQ,FiT-North McKinney Qualifier,22,36,24799,2,2,15,20,12,40,87
 2025,USTXMTQ,FiT-North McKinney Qualifier,22,36,7172,3,3,14,19,30,10,73
@@ -2001,27 +2244,6 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USTXMTQ,FiT-North McKinney Qualifier,22,36,18121,17,13,8,0,0,0,8
 2025,USTXMTQ,FiT-North McKinney Qualifier,22,36,20483,18,17,6,0,0,0,6
 2025,USTXMTQ,FiT-North McKinney Qualifier,22,36,20195,19,18,5,0,0,0,5
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,17230,1,4,13,19,60,20,112
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,19389,2,1,16,20,12,40,88
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,31835,3,2,15,20,0,40,75
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,5026,4,3,14,19,12,20,65
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,8400,5,11,10,17,30,0,57
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,20515,6,14,8,15,12,10,45
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,19922,7,6,12,17,15,0,44
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,33748,8,9,11,16,12,5,44
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,33441,9,5,13,18,12,0,43
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,16028,10,10,10,18,12,0,40
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,31143,11,8,11,15,0,10,36
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,25976,12,7,11,16,0,5,32
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,31834,13,16,8,0,12,0,20
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,26630,14,20,5,0,12,0,17
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,8641,15,13,9,0,6,0,15
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,30534,16,12,9,0,0,0,9
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,21676,17,15,8,0,0,0,8
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,32068,18,17,7,0,0,0,7
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,31683,19,19,6,0,0,0,6
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,32272,20,18,6,0,0,0,6
-2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,32071,21,21,4,0,0,0,4
 2025,USWAFELT1,Feynman League Tournament,28,44,19745,1,1,16,20,60,10,106
 2025,USWAFELT1,Feynman League Tournament,28,44,28395,2,2,14,19,12,40,85
 2025,USWAFELT1,Feynman League Tournament,28,44,28139,3,8,15,19,0,40,74
@@ -2049,6 +2271,27 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USWAFELT1,Feynman League Tournament,28,44,27433,25,23,5,0,0,0,5
 2025,USWAFELT1,Feynman League Tournament,28,44,30452,26,13,5,0,0,0,5
 2025,USWAFELT1,Feynman League Tournament,28,44,16113,27,27,4,0,0,0,4
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,17230,1,4,13,19,60,20,112
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,19389,2,1,16,20,12,40,88
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,31835,3,2,15,20,0,40,75
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,5026,4,3,14,19,12,20,65
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,8400,5,11,10,17,30,0,57
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,20515,6,14,8,15,12,10,45
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,19922,7,6,12,17,15,0,44
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,33748,8,9,11,16,12,5,44
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,33441,9,5,13,18,12,0,43
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,16028,10,10,10,18,12,0,40
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,31143,11,8,11,15,0,10,36
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,25976,12,7,11,16,0,5,32
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,31834,13,16,8,0,12,0,20
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,26630,14,20,5,0,12,0,17
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,8641,15,13,9,0,6,0,15
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,30534,16,12,9,0,0,0,9
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,21676,17,15,8,0,0,0,8
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,32068,18,17,7,0,0,0,7
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,31683,19,19,6,0,0,0,6
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,32272,20,18,6,0,0,0,6
+2025,USUTSAQ,UT-Beehive Academy Qualifier,27,42,32071,21,21,4,0,0,0,4
 2025,USWISHQ,Showdown in Sheboygan,25,43,13201,1,11,10,18,60,0,88
 2025,USWISHQ,Showdown in Sheboygan,25,43,9225,2,5,13,20,6,40,79
 2025,USWISHQ,Showdown in Sheboygan,25,43,21180,3,1,16,20,0,40,76
@@ -2074,3 +2317,27 @@ season,event_code,event_name,team_count,match_count,team_number,adv_rank,qual_ra
 2025,USWISHQ,Showdown in Sheboygan,25,43,32055,23,19,7,0,0,0,7
 2025,USWISHQ,Showdown in Sheboygan,25,43,24543,24,22,6,0,0,0,6
 2025,USWISHQ,Showdown in Sheboygan,25,43,16217,25,25,4,0,0,0,4
+2025,USWIWHQ,Whitewater Qualifier,25,40,8680,1,1,16,20,60,40,136
+2025,USWIWHQ,Whitewater Qualifier,25,40,9225,2,3,14,20,12,40,86
+2025,USWIWHQ,Whitewater Qualifier,25,40,14631,3,2,15,19,12,10,56
+2025,USWIWHQ,Whitewater Qualifier,25,40,23802,4,10,11,19,12,10,52
+2025,USWIWHQ,Whitewater Qualifier,25,40,4115,5,16,8,16,6,20,50
+2025,USWIWHQ,Whitewater Qualifier,25,40,21355,6,5,13,18,12,5,48
+2025,USWIWHQ,Whitewater Qualifier,25,40,22548,7,4,13,18,12,5,48
+2025,USWIWHQ,Whitewater Qualifier,25,40,9224,8,7,12,16,0,20,48
+2025,USWIWHQ,Whitewater Qualifier,25,40,25015,9,9,11,17,12,0,40
+2025,USWIWHQ,Whitewater Qualifier,25,40,13201,10,23,5,0,30,0,35
+2025,USWIWHQ,Whitewater Qualifier,25,40,14820,11,6,12,17,0,0,29
+2025,USWIWHQ,Whitewater Qualifier,25,40,23678,12,8,11,15,0,0,26
+2025,USWIWHQ,Whitewater Qualifier,25,40,19927,13,15,9,0,15,0,24
+2025,USWIWHQ,Whitewater Qualifier,25,40,22526,14,12,10,0,12,0,22
+2025,USWIWHQ,Whitewater Qualifier,25,40,14284,15,20,7,15,0,0,22
+2025,USWIWHQ,Whitewater Qualifier,25,40,26551,16,11,10,0,0,0,10
+2025,USWIWHQ,Whitewater Qualifier,25,40,15382,17,13,9,0,0,0,9
+2025,USWIWHQ,Whitewater Qualifier,25,40,26334,18,14,9,0,0,0,9
+2025,USWIWHQ,Whitewater Qualifier,25,40,24687,19,17,8,0,0,0,8
+2025,USWIWHQ,Whitewater Qualifier,25,40,26396,20,18,8,0,0,0,8
+2025,USWIWHQ,Whitewater Qualifier,25,40,13828,21,19,7,0,0,0,7
+2025,USWIWHQ,Whitewater Qualifier,25,40,24589,22,21,6,0,0,0,6
+2025,USWIWHQ,Whitewater Qualifier,25,40,32394,23,22,6,0,0,0,6
+2025,USWIWHQ,Whitewater Qualifier,25,40,22672,24,24,4,0,0,0,4
