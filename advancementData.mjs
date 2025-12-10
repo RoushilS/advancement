@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Fetch advancement + qual ranking data via GraphQL and write a CSV.
-// Usage:
+// Fetch advancement data (works for 2024 fixed advancement order and 2025 points) via GraphQL and write a CSV.
+// Usage example:
 //   API_ORIGIN=https://api.ftcscout.org/graphql FRONTEND_CODE=ftc-scout \
-//   node advancementDataFromCsv.mjs 2025 advancementData.csv
+//   node advancementData.mjs 2025 advancementData.csv
 
 import fs from "fs";
 
@@ -47,41 +47,23 @@ query Event($season: Int!, $code: String!) {
       playoffPoints
       totalPoints
     }
-    teams {
+    advancementBreakdown {
       teamNumber
-      stats {
-        ... on TeamEventStats2025 { rank }
-        ... on TeamEventStats2024 { rank }
-        ... on TeamEventStats2023 { rank }
-        ... on TeamEventStats2022 { rank }
-        ... on TeamEventStats2021Trad { rank }
-        ... on TeamEventStats2021Remote { rank }
-        ... on TeamEventStats2020Trad { rank }
-        ... on TeamEventStats2020Remote { rank }
-        ... on TeamEventStats2019 { rank }
-      }
+      rank
+      qualRank
+      allianceSeed
+      allianceRole
+      playoffPlacement
+      meetsThreshold
+      isAdvancementEligible
+      awards { type placement }
     }
+    advancementInfo { advancesTo }
   }
 }`;
 
 function isSupportedAdvEvent(type) {
     return ADVANCEMENT_EVENT_TYPES.has(type);
-}
-
-function awardsAreLoaded(advancement) {
-    return advancement.length > 0 && advancement.every((a) => a.awardPoints !== null);
-}
-
-function rowHasMissing(a, qualRank) {
-    return (
-        a.rank == null ||
-        qualRank == null ||
-        a.qualPoints == null ||
-        a.allianceSelectionPoints == null ||
-        a.awardPoints == null ||
-        a.playoffPoints == null ||
-        a.totalPoints == null
-    );
 }
 
 async function fetchGraphQL(query, variables, attempt = 1) {
@@ -122,6 +104,35 @@ function csvEscape(val) {
     return s;
 }
 
+function boolToCsv(val) {
+    if (val === true) return "true";
+    if (val === false) return "false";
+    return "";
+}
+
+function awardsToString(awards) {
+    if (!Array.isArray(awards) || awards.length === 0) return "";
+    // Skip robot playoffs awards and non-on-field awards we don't want to mix into advancement factors.
+    const SKIP = new Set([
+        "Winner",
+        "Finalist",
+        "Compass",
+        "DeansListFinalist",
+        "DeansListSemiFinalist",
+    ]);
+
+    return awards
+        .map((a) => {
+            const type = a?.type ?? "";
+            if (!type || SKIP.has(type)) return "";
+            const placement = a?.placement;
+            if (placement == null) return type;
+            return `${type}:${placement}`;
+        })
+        .filter(Boolean)
+        .join(";");
+}
+
 async function main() {
     console.log(`Using API_ORIGIN=${API_ORIGIN}, season=${season}`);
     const evSearch = await fetchGraphQL(EVENTS_SEARCH, { season });
@@ -147,33 +158,76 @@ async function main() {
             const matches = event.matches ?? [];
             if (!matches.length) continue;
 
-            const advancement = event.advancement ?? [];
-            const teamCount = advancement.length;
-            if (!awardsAreLoaded(advancement)) continue;
-
-            const qualRanks = new Map();
-            for (const t of event.teams ?? []) {
-                const r = t.stats?.rank;
-                if (r != null) qualRanks.set(t.teamNumber, r);
+            const advPoints = new Map();
+            for (const a of event.advancement ?? []) {
+                if (a?.teamNumber != null) advPoints.set(a.teamNumber, a);
             }
 
-            for (const a of advancement) {
-                const qualRank = qualRanks.get(a.teamNumber) ?? null;
-                if (rowHasMissing(a, qualRank)) continue;
+            const breakdowns = new Map();
+            for (const b of event.advancementBreakdown ?? []) {
+                if (b?.teamNumber != null) breakdowns.set(b.teamNumber, b);
+            }
+
+            // Skip multi-division events (e.g., ones that emit DivisionWinner awards).
+            let hasDivisionAward = false;
+            for (const b of breakdowns.values()) {
+                for (const award of b?.awards ?? []) {
+                    const type = award?.type;
+                    if (type === "DivisionWinner" || type === "DivisionFinalist") {
+                        hasDivisionAward = true;
+                        break;
+                    }
+                }
+                if (hasDivisionAward) break;
+            }
+            if (hasDivisionAward) continue;
+
+            // For 2025, drop the entire event if any team has multiple awards (after filtering skipped award types).
+            if (season === 2025) {
+                let hasMultipleAwards = false;
+                for (const b of breakdowns.values()) {
+                    const awardsStr = awardsToString(b?.awards);
+                    if (awardsStr.includes(";")) {
+                        hasMultipleAwards = true;
+                        break;
+                    }
+                }
+                if (hasMultipleAwards) continue;
+            }
+
+            const teamNumbers = new Set([...advPoints.keys(), ...breakdowns.keys()]);
+            if (!teamNumbers.size) continue;
+
+            const teamCount = teamNumbers.size;
+            for (const teamNumber of teamNumbers) {
+                const pts = advPoints.get(teamNumber);
+                const bd = breakdowns.get(teamNumber);
+                const advRank = bd?.rank ?? pts?.rank ?? null;
+                const qualRank = bd?.qualRank ?? null;
+
+                // Need an advancement rank to compare teams across seasons.
+                if (advRank == null) continue;
+
                 rows.push({
                     season,
                     event_code: event.code,
                     event_name: event.name,
                     team_count: teamCount,
                     match_count: matches.length,
-                    team_number: a.teamNumber,
-                    adv_rank: a.rank ?? "",
-                    qual_rank: qualRank ?? "",
-                    qual_points: a.qualPoints ?? "",
-                    alliance_selection_points: a.allianceSelectionPoints ?? "",
-                    award_points: a.awardPoints ?? "",
-                    playoff_points: a.playoffPoints ?? "",
-                    total_points: a.totalPoints ?? "",
+                    team_number: teamNumber,
+                    adv_rank: advRank,
+                    qual_rank: (qualRank && qualRank > 0) ? qualRank : "",
+                    qual_points: pts?.qualPoints ?? "",
+                    alliance_selection_points: pts?.allianceSelectionPoints ?? "",
+                    award_points: pts?.awardPoints ?? "",
+                    playoff_points: pts?.playoffPoints ?? "",
+                    total_points: pts?.totalPoints ?? "",
+                    alliance_seed: bd?.allianceSeed ?? "",
+                    alliance_role: bd?.allianceRole ?? "",
+                    playoff_placement: bd?.playoffPlacement ?? "",
+                    advanced: boolToCsv(bd?.meetsThreshold),
+                    is_advancement_eligible: boolToCsv(bd?.isAdvancementEligible),
+                    award_types: awardsToString(bd?.awards),
                 });
             }
 
@@ -206,7 +260,13 @@ async function main() {
         "award_points",
         "playoff_points",
         "total_points",
-  ];
+        "alliance_seed",
+        "alliance_role",
+        "playoff_placement",
+        "advanced",
+        "is_advancement_eligible",
+        "award_types",
+    ];
 
     const lines = [header.join(",")];
     for (const r of rows) {

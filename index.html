@@ -5,14 +5,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Calculate your FTC advancement probability and odds based on historical data. See your chances of advancing at FIRST Tech Challenge events." />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T577GC8SB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-4T577GC8SB');
-  </script>
   <title>Advancement odds for FTC</title>
   <style>
     body {
@@ -27,6 +19,16 @@
     h1 {
       margin-top: 0;
       font-size: 1.5rem;
+    }
+
+    h2 {
+      margin: 0 0 8px 0;
+      font-size: 1.1rem;
+    }
+
+    h3 {
+      margin: 0 0 8px 0;
+      font-size: 1rem;
     }
 
     form {
@@ -76,6 +78,9 @@
       padding: 8px 16px;
       font-size: 14px;
       cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: #2563eb;
       color: #fff;
       border: none;
@@ -85,6 +90,29 @@
 
     button:hover {
       background: #1d4ed8;
+    }
+
+    .nav-bar {
+      margin-bottom: 12px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      text-decoration: none;
+    }
+
+    .nav-btn {
+      min-width: 220px;
+    }
+
+    .accent-btn {
+      background: #059669;
+    }
+
+    .accent-btn:hover {
+      background: #047857;
     }
 
     .separator {
@@ -220,6 +248,14 @@
 
       h1 {
         font-size: 1.25rem;
+      }
+
+      .nav-link {
+        width: 100%;
+      }
+
+      .nav-btn {
+        width: 100%;
       }
 
       form {
@@ -379,10 +415,17 @@
       color: #000;
     }
   </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T577GC8SB"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-4T577GC8SB');</script>
 </head>
 
 <body>
   <h1>Advancement odds for FTC</h1>
+  <div class="nav-bar">
+    <a href="compare/" class="nav-link">
+      <button type="button" class="accent-btn nav-btn">Compare with previous season</button>
+    </a>
+  </div>
   <form id="controls">
     <div class="control-row" id="teams-row">
       <div class="control-group">
@@ -993,6 +1036,13 @@
 
     applyRangePreset();
     renderGridAxisToggles();
+
+    const compareNavLink = document.querySelector('.nav-link[href="compare/"]');
+    if (compareNavLink) {
+      compareNavLink.addEventListener('click', () => {
+        trackEvent('nav_to_compare', { source: 'main_header_button' });
+      });
+    }
 
     // Modal functionality
     const modalOverlay = document.getElementById('modal-overlay');
