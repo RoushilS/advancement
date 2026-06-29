@@ -26,7 +26,7 @@ export function renderFactorTables(rows, threshold, factorTablesEl) {
 
     let sorted = Array.from(groups.values());
     if (!isLowData) {
-      sorted = sorted.filter((g) => g.total > 2);
+      sorted = sorted.filter((g) => g.total > 3);
     }
 
     const { groups: collapsedGroups } = collapseGroups(sorted, factor.id);
@@ -35,7 +35,7 @@ export function renderFactorTables(rows, threshold, factorTablesEl) {
     if (!sorted.length) {
       parts.push(
         `<table><caption>${factor.fullLabel || factor.label}</caption><tr><td class="missing">No data${
-          !isLowData ? " (n>2)" : ""
+          !isLowData ? " (n>3)" : ""
         }</td></tr></table>`
       );
       continue;
@@ -52,7 +52,7 @@ export function renderFactorTables(rows, threshold, factorTablesEl) {
     for (const g of sorted) {
       const pct = (g.hits / g.total) * 100;
       const { bg, fg } = colorForPct(pct);
-      const cls = g.total <= 3 ? "low-data-cell" : "";
+      const cls = g.total <= 4 ? "low-data-cell" : "";
       rowsHtml.push(
         `<tr><th>${g.label}</th><td class="${cls}" style="background-color:${bg};color:${fg};">${pct.toFixed(
           1
@@ -118,8 +118,8 @@ export function renderGrid(rows, threshold, xId, yId, tableContainerEl) {
   let yList = Array.from(yVals.values());
 
   if (!isLowData) {
-    xList = xList.filter((x) => x.total > 2);
-    yList = yList.filter((y) => y.total > 2);
+    xList = xList.filter((x) => x.total > 4);
+    yList = yList.filter((y) => y.total > 4);
   }
 
   // Collapse axes
@@ -184,7 +184,7 @@ export function renderGrid(rows, threshold, xId, yId, tableContainerEl) {
       } else {
         const pct = (cell.hits / cell.total) * 100;
         const { bg, fg } = colorForPct(pct);
-        const cls = cell.total <= 3 ? "low-data-cell" : "";
+        const cls = cell.total <= 4 ? "low-data-cell" : "";
         out.push(
           `<td class="${cls}" style="background-color:${bg};color:${fg};">${pct.toFixed(
             1

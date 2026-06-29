@@ -47,7 +47,7 @@ function renderDeltas(
     for (const g of combinedGroups) {
       const a = map25.get(g.key);
       const b = map24.get(g.key);
-      if (!a || !b || a.total < 3 || b.total < 3) continue; // skip low data
+      if (!a || !b || a.total <= 4 || b.total <= 4) continue; // skip low data
       const pct25 = (a.hits / a.total) * 100;
       const pct24 = (b.hits / b.total) * 100;
       const delta = pct25 - pct24;
@@ -85,8 +85,8 @@ function renderDeltas(
         const typeLabel = FACTOR_LABEL_BY_ID[d.factorId] || d.factorId;
         const { bg: bg25, fg: fg25 } = colorForPct(d.pct25);
         const { bg: bg24, fg: fg24 } = colorForPct(d.pct24);
-        const low25 = d.total25 <= 3 ? "low-data-cell" : "";
-        const low24 = d.total24 <= 3 ? "low-data-cell" : "";
+        const low25 = d.total25 <= 4 ? "low-data-cell" : "";
+        const low24 = d.total24 <= 4 ? "low-data-cell" : "";
         // Color delta on the same scale as other cells: map -50..50 to 0..100, then reuse colorForPct.
         const normalizedDelta = Math.max(0, Math.min(100, 50 + d.delta));
         const { bg: deltaBg, fg: deltaFg } = colorForPct(normalizedDelta);
@@ -174,7 +174,7 @@ export function renderFactorTables(
           return '<td class="missing">–</td>';
         const pct = (group.hits / group.total) * 100;
         const { bg, fg } = colorForPct(pct);
-        const cls = group.total <= 3 ? "low-data-cell" : "";
+        const cls = group.total <= 4 ? "low-data-cell" : "";
         return `<td class="${cls}" style="background-color:${bg};color:${fg};">${pct.toFixed(
           1
         )}%<br><small>${group.hits}/${group.total}</small></td>`;
