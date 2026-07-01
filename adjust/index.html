@@ -265,6 +265,12 @@ class Component extends DCLogic {
   AWARD_SORT = { 60: 1, 30: 2, 15: 3, 12: 4, 6: 5, 3: 6, 0: 7 };
   PLAYOFF_LABELS = { 40: "1st playoffs (40)", 20: "2nd playoffs (20)", 10: "3rd playoffs (10)", 5: "4th playoffs (5)", 0: "Not top 4 (0)" };
   PLAYOFF_SORT = { 40: 1, 20: 2, 10: 3, 5: 4, 0: 5 };
+  // Names without the parenthetical point value, plus the map from official value -> editable pv key.
+  // Used to label groups with the user's chosen point value (falls back to the official value when no pv given).
+  AWARD_NAMES = { 60: "Inspire 1st", 30: "Inspire 2nd", 15: "Inspire 3rd", 12: "1st place award", 6: "2nd place award", 3: "3rd place award", 0: "No awards" };
+  AWARD_PV_KEY = { 60: "i1", 30: "i2", 15: "i3", 12: "a1", 6: "a2", 3: "a3" };
+  PLAYOFF_NAMES = { 40: "1st playoffs", 20: "2nd playoffs", 10: "3rd playoffs", 5: "4th playoffs", 0: "Not top 4" };
+  PLAYOFF_PV_KEY = { 40: "p1", 20: "p2", 10: "p3", 5: "p4" };
 
   FACTORS = [
     { id: "award", label: "Awards", full: "Awards" },
@@ -344,10 +350,20 @@ class Component extends DCLogic {
 
   // ---- factor normalize ----
   getVal(fid, r) { return fid === "award" ? r[2] : fid === "playoff" ? r[3] : fid === "alliance" ? r[4] : r[6]; }
-  normalize(fid, val) {
+  normalize(fid, val, pv) {
     if (val == null || val === "") return null;
-    if (fid === "award") return { key: String(val), label: this.AWARD_LABELS[val] || `${val} award pts`, sort: this.AWARD_SORT[val] ?? 1000 };
-    if (fid === "playoff") return { key: String(val), label: this.PLAYOFF_LABELS[val] || `${val} playoff pts`, sort: this.PLAYOFF_SORT[val] ?? 1000 };
+    if (fid === "award") {
+      const name = this.AWARD_NAMES[val];
+      if (name == null) return { key: String(val), label: this.AWARD_LABELS[val] || `${val} award pts`, sort: this.AWARD_SORT[val] ?? 1000 };
+      const k = this.AWARD_PV_KEY[val]; const eff = pv && k ? pv.award[k] : val;
+      return { key: String(val), label: `${name} (${eff})`, sort: this.AWARD_SORT[val] ?? 1000 };
+    }
+    if (fid === "playoff") {
+      const name = this.PLAYOFF_NAMES[val];
+      if (name == null) return { key: String(val), label: this.PLAYOFF_LABELS[val] || `${val} playoff pts`, sort: this.PLAYOFF_SORT[val] ?? 1000 };
+      const k = this.PLAYOFF_PV_KEY[val]; const eff = pv && k ? pv.playoff[k] : val;
+      return { key: String(val), label: `${name} (${eff})`, sort: this.PLAYOFF_SORT[val] ?? 1000 };
+    }
     if (fid === "alliance") {
       if (val === 0) return { key: "0", label: "Not selected (0)", sort: 999 };
       const seed = 21 - val;
@@ -418,14 +434,14 @@ class Component extends DCLogic {
     return set;
   }
 
-  buildGrid(rows, threshold, sel, lowData, advFn) {
+  buildGrid(rows, threshold, sel, lowData, advFn, pv) {
     if (!advFn) advFn = (r) => this.isAdvancing(r, threshold);
     const a = sel[0], b = sel[1];
     const ca = this.uniqCount(rows, a), cb = this.uniqCount(rows, b);
     const moreOnY = ca <= cb; const xId = moreOnY ? b : a, yId = moreOnY ? a : b;
     const xV = new Map(), yV = new Map(), combos = new Map();
     for (const r of rows) {
-      const xm = this.normalize(xId, this.getVal(xId, r)), ym = this.normalize(yId, this.getVal(yId, r));
+      const xm = this.normalize(xId, this.getVal(xId, r), pv), ym = this.normalize(yId, this.getVal(yId, r), pv);
       if (!xm || !ym) continue; const adv = advFn(r);
       if (!xV.has(xm.key)) xV.set(xm.key, { ...xm, total: 0, hits: 0 }); const xe = xV.get(xm.key); xe.total++; if (adv) xe.hits++;
       if (!yV.has(ym.key)) yV.set(ym.key, { ...ym, total: 0, hits: 0 }); const ye = yV.get(ym.key); ye.total++; if (adv) ye.hits++;
@@ -598,7 +614,7 @@ class Component extends DCLogic {
       // 2-way table under the custom point system
       if (s.grid.length === 2) {
         const advFn0 = this.newAdvSet(rows, s.threshold, pv);
-        const G = this.buildGrid(rows, s.threshold, s.grid, lowData, (r) => advFn0.has(r));
+        const G = this.buildGrid(rows, s.threshold, s.grid, lowData, (r) => advFn0.has(r), pv);
         if (G.ok) {
           simGridReady = true; simGridCaption = G.caption; simGridCols = G.xl.map((x) => x.label);
           simGridRows = G.yl.map((y) => ({ label: y.label, cells: G.xl.map((x) => { const cell = G.nc.get(x.key + "|||" + y.key); if (!cell) return { pctText: "–", count: "", bg: "#f9f9f9", fg: "#888", stripe: "none" }; const pct = (cell.hits / cell.total) * 100; const c = this.colorForPct(pct); return { pctText: pct.toFixed(1) + "%", count: cell.hits + "/" + cell.total, bg: c.bg, fg: c.fg, stripe: this.stripe(cell.total) }; }) }));
