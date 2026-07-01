@@ -2,9 +2,14 @@ import { loadCsv } from "../shared/csv.js";
 import { applyRangePreset } from "../shared/range.js";
 import { renderFactorTables } from "./renderers.js";
 
-function trackEvent(eventName, params) {
-  if (typeof gtag === "function") {
-    gtag("event", eventName, params);
+function trackEvent(eventName, params = {}) {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, {
+      event_category: "engagement",
+      page_path: window.location.pathname,
+      app_view: "compare",
+      ...params,
+    });
   }
 }
 
@@ -21,6 +26,16 @@ const backNavLink = document.querySelector('.nav-link[href="../"]');
 if (backNavLink) {
   backNavLink.addEventListener("click", () => {
     trackEvent("nav_to_main", { source: "compare_header_button" });
+  });
+}
+const adjustNavLink = document.querySelector('.nav-link[href="../adjust/"]');
+if (adjustNavLink) {
+  adjustNavLink.addEventListener("click", () => {
+    trackEvent("adjust_advancement_system", {
+      event_category: "engagement",
+      source: "compare_header_button",
+      target_view: "point_system",
+    });
   });
 }
 
